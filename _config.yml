@@ -1,10 +1,12 @@
 title: RSA Metodologias
-description: Metodologías y guías de trabajo de la Red Sísmica del Austro
-theme: just-the-docs
-url: https://RedSismicaAustro.github.io
-baseurl: /RSA-Metodologias    # nombre del repo (importante)
-search_enabled: true          # activa buscador interno
+description: Metodologias y guias de trabajo de la RSA
+url: https://redsismicaaustro.github.io
+baseurl: /RSA-Metodologias   
 
-aux_links:                    # enlaces externos arriba a la derecha
-  "GitHub del proyecto":
-    - "https://github.com/RedSismicaAustro/RSA-Metodologias"
+# Usa el tema como remote_theme (no uses 'theme:')
+remote_theme: just-the-docs/just-the-docs
+
+plugins:
+  - jekyll-remote-theme
+
+search_enabled: true
