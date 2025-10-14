@@ -1,7 +1,7 @@
 title: RSA Metodologias
 description: Metodologias y guias de trabajo de la RSA
 url: https://redsismicaaustro.github.io
-baseurl: /RSA-Metodologias   
+baseurl: /RSA-Metodologias
 
 # Usa el tema como remote_theme (no uses 'theme:')
 remote_theme: just-the-docs/just-the-docs
@@ -9,4 +9,38 @@ remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-remote-theme
 
+# Búsqueda
 search_enabled: true
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+# Navegación auxiliar (header derecho)
+aux_links:
+  "RSA en GitHub":
+    - "https://github.com/RedSismicaAustro"
+
+# Navegación inferior (footer)
+back_to_top: true
+back_to_top_text: "Volver arriba"
+
+footer_content: "Copyright &copy; 2025 Red Sísmica del Austro - Universidad de Cuenca"
+
+# Botón "Edit this page" (editar en GitHub)
+gh_edit_link: true
+gh_edit_link_text: "Editar esta página en GitHub"
+gh_edit_repository: "https://github.com/RedSismicaAustro/RSA-Metodologias"
+gh_edit_branch: "main"
+gh_edit_view_mode: "edit"
+
+# Color scheme
+color_scheme: light
+
+# Configuración adicional
+heading_anchors: true
+permalink: pretty
