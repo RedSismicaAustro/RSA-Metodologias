@@ -1,0 +1,23 @@
+# Jekyll build files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler
+.bundle/
+vendor/
+
+# Documentation for AI assistants (not for publication)
+CLAUDE.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/

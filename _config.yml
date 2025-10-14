@@ -44,3 +44,13 @@ color_scheme: light
 # Configuración adicional
 heading_anchors: true
 permalink: pretty
+
+# Excluir archivos de la construcción del sitio
+exclude:
+  - CLAUDE.md
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - README.md
