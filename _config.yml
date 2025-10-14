@@ -45,6 +45,10 @@ color_scheme: light
 heading_anchors: true
 permalink: pretty
 
+# Habilitar soporte para diagramas Mermaid
+mermaid:
+  version: "10.6.1"
+
 # Excluir archivos de la construcción del sitio
 exclude:
   - CLAUDE.md
