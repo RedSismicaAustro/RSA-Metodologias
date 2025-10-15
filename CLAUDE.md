@@ -18,9 +18,16 @@ RSA-Metodologias/
 ├── _config.yml                   # Jekyll configuration
 ├── docs/                         # Documentation content
 │   ├── entornos/                 # Development environment guides
+│   │   ├── index.md
 │   │   └── instalacion-wsl.md
-│   ├── git/                      # Git workflow guides (empty)
+│   ├── git/                      # Git workflow guides
+│   │   ├── index.md
+│   │   ├── comandos-comunes.md
+│   │   ├── tipos-ramas.md
+│   │   ├── formato-commits.md
+│   │   └── multiples-cuentas-github.md
 │   └── redes/                    # Network/hardware guides
+│       ├── index.md
 │       └── adaptador_wifi_rpi.md
 └── .github/workflows/
     └── jekyll-gh-pages.yml       # Auto-deploy to GitHub Pages
@@ -35,6 +42,8 @@ RSA-Metodologias/
 Key features enabled in [_config.yml](_config.yml):
 - Search functionality (`search_enabled: true`)
 - Remote theme via `jekyll-remote-theme` plugin
+- Mermaid diagram support (version 10.6.1)
+- "Edit this page" GitHub links for all documentation pages
 
 ## Content Organization
 
@@ -51,7 +60,7 @@ layout: home              # Only for index.md
 
 **Current categories:**
 - **Entornos**: Development environment setup (WSL, Ubuntu, etc.)
-- **Git**: Git workflows and best practices (placeholder)
+- **Git**: Git workflows, version control best practices, and GitHub configuration
 - **Redes**: Network and hardware configuration (Raspberry Pi WiFi adapters, etc.)
 
 ## Working with Documentation
@@ -136,11 +145,22 @@ The repository uses SSH key with host alias configuration:
 ## Current State
 
 **Active documentation:**
-- WSL/Ubuntu installation basics
+
+*Entornos (Development Environments):*
+- WSL/Ubuntu installation and configuration
+
+*Git (Version Control):*
+- Comandos Comunes: Comprehensive Git command reference (initialization, configuration, commits, branches, merges, GitHub integration, troubleshooting)
+- Tipos de Ramas: Branching strategy (main, develop, feature/, bugfix/, hotfix/, release/, support/)
+- Formato de Commits: Commit message conventions with standardized prefixes (FEAT, FIX, DOCS, etc.)
+- Múltiples Cuentas de GitHub: Multi-account GitHub setup with SSH keys, aliases, and automatic identity management per directory
+
+*Redes (Networking):*
 - TP-Link TL-WN822N WiFi adapter setup for Raspberry Pi 3B+
 
-**Placeholder sections:**
-- Git workflows (`docs/git/` is empty)
-- DevOps guides (directory doesn't exist yet)
+**Future sections planned:**
+- DevOps guides (Docker, CI/CD, deployment)
+- Additional hardware configuration guides
+- Data processing workflows
 
-The site is in early development with minimal content. Most documentation is planned but not yet written.
+The Git documentation section is now complete with comprehensive guides covering the entire workflow used by RSA projects.
