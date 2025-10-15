@@ -21,6 +21,9 @@ Estrategia de branching que define los tipos de ramas (`main`, `develop`, `featu
 ### [Formato de Commits](formato-commits.md)
 Convenciones para escribir mensajes de commit claros y consistentes, utilizando prefijos estandarizados como `FEAT`, `FIX`, `DOCS`, etc.
 
+### [Múltiples Cuentas de GitHub](multiples-cuentas-github.md)
+Configuración detallada para trabajar con múltiples cuentas de GitHub en un mismo equipo utilizando llaves SSH separadas, aliases y gestión automática de identidades por carpeta.
+
 ---
 
 ## ¿Por qué estas convenciones?
