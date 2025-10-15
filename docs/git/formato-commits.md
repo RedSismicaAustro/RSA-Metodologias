@@ -1,7 +1,7 @@
 ---
 title: Formato de Commits
 parent: Git
-nav_order: 1
+nav_order: 3
 ---
 
 # Formato de Commits
