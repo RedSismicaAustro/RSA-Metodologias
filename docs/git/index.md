@@ -24,6 +24,10 @@ Convenciones para escribir mensajes de commit claros y consistentes, utilizando 
 ### [Múltiples Cuentas de GitHub](multiples-cuentas-github.md)
 Configuración detallada para trabajar con múltiples cuentas de GitHub en un mismo equipo utilizando llaves SSH separadas, aliases y gestión automática de identidades por carpeta.
 
+### [Migración de Repositorios](migracion-repositorios.md)
+Procedimiento completo para migrar repositorios desde cuentas personales hacia la organización Red-Sismica-del-Austro, preservando historial, ramas, tags y autoría original.
+
+
 ---
 
 ## ¿Por qué estas convenciones?
