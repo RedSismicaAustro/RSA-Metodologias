@@ -133,7 +133,7 @@ El repositorio debe estar completamente vacío para recibir el mirror.
 
 ---
 
-**Convención de Nombres**
+### 4. Convención de Nombres
 
 Los repositorios institucionales siguen el formato estandarizado:
 
@@ -234,7 +234,7 @@ RSA-[Origen]-[Tipo]-[Nombre_Proyecto]
 
 ---
 
-### 4. Vinculación y Transferencia
+### 5. Vinculación y Transferencia
 
 Configurar el nuevo repositorio como destino y transferir todo el contenido:
 
@@ -274,7 +274,7 @@ To git@github.com-rsa:RedSismicaAustro/RSA-Intern-NombreProyecto.git
 
 ---
 
-### 5. Verificación de la Migración
+### 6. Verificación de la Migración
 
 Clonar el repositorio institucional en su ubicación definitiva y verificar la integridad:
 
@@ -340,7 +340,7 @@ Confirmar que los autores originales se preservan correctamente.
 
 ---
 
-### 6. Ajustes Post-Migración
+### 7. Ajustes Post-Migración
 
 **Renombrar rama principal (si es necesario)**
 
@@ -422,7 +422,7 @@ Gestionar acceso al repositorio:
 
 ---
 
-### 7. Limpieza
+### 8. Limpieza
 
 Eliminar el directorio temporal utilizado para la migración:
 
