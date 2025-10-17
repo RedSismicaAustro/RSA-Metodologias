@@ -133,7 +133,7 @@ El repositorio debe estar completamente vacío para recibir el mirror.
 
 ---
 
-#### **Convención de Nombres**
+**Convención de Nombres**
 
 Los repositorios institucionales siguen el formato estandarizado:
 
@@ -151,7 +151,7 @@ RSA-[Origen]-[Tipo]-[Nombre_Proyecto]
 
 ---
 
-#### **Códigos de Tipo de Proyecto**
+**Códigos de Tipo de Proyecto**
 
 | Código | Tipo de Proyecto | Descripción | Ejemplo |
 |--------|------------------|-------------|---------|
@@ -164,7 +164,7 @@ RSA-[Origen]-[Tipo]-[Nombre_Proyecto]
 
 ---
 
-#### **Ejemplos de Aplicación**
+**Ejemplos de Aplicación**
 
 **Proyecto de pasante - Hardware:**
 - Original: `acelerografo-esp32-smd`
@@ -188,7 +188,7 @@ RSA-[Origen]-[Tipo]-[Nombre_Proyecto]
 
 ---
 
-#### **Consideraciones para la Nomenclatura**
+**Consideraciones para la Nomenclatura**
 
 1. **Usar Snake_Case**: Separar palabras con guiones bajos (no espacios ni guiones)
 2. **Nombres descriptivos**: El nombre debe indicar claramente la función del proyecto
@@ -198,7 +198,7 @@ RSA-[Origen]-[Tipo]-[Nombre_Proyecto]
 
 ---
 
-#### **Guía de Decisión Rápida para Tipo de Proyecto**
+**Guía de Decisión Rápida para Tipo de Proyecto**
 
 **¿Cómo clasificar el proyecto?**
 
@@ -287,7 +287,7 @@ git clone git@github.com-rsa:RedSismicaAustro/RSA-Intern-NombreProyecto.git
 cd RSA-Intern-NombreProyecto
 ```
 
-#### **Verificar ramas**
+**Verificar ramas**
 
 ```shell
 git branch -a
@@ -302,7 +302,7 @@ git branch -a
   remotes/origin/feature/telemetria
 ```
 
-#### **Verificar tags**
+**Verificar tags**
 
 ```shell
 git tag -l
@@ -315,7 +315,7 @@ v0.2.0
 v1.0.0
 ```
 
-#### **Verificar historial de commits**
+**Verificar historial de commits**
 
 ```shell
 git log --oneline --graph --all
@@ -330,7 +330,7 @@ git log --oneline --graph --all
 ...
 ```
 
-#### **Verificar autoría de commits**
+**Verificar autoría de commits**
 
 ```shell
 git log --format="%an <%ae>" | sort -u
@@ -342,7 +342,7 @@ Confirmar que los autores originales se preservan correctamente.
 
 ### 6. Ajustes Post-Migración
 
-#### **Renombrar rama principal (si es necesario)**
+**Renombrar rama principal (si es necesario)**
 
 Si el repositorio original utiliza `master` como rama principal, renombrarla a `main`:
 
@@ -366,7 +366,7 @@ git push origin --delete master
 3. Hacer clic en **Update**
 4. Confirmar el cambio
 
-#### **Actualizar README.md**
+**Actualizar README.md**
 
 Editar el archivo README para reflejar el nuevo contexto institucional:
 
@@ -398,7 +398,7 @@ git commit -m "DOCS: Actualizado README para reflejar contexto institucional"
 git push origin main
 ```
 
-#### **Configurar protecciones de rama**
+**Configurar protecciones de rama**
 
 Establecer protecciones para la rama principal:
 
@@ -410,7 +410,7 @@ Establecer protecciones para la rama principal:
    - ☑ Require status checks to pass before merging
    - ☑ Include administrators (opcional)
 
-#### **Añadir colaboradores**
+**Añadir colaboradores**
 
 Gestionar acceso al repositorio:
 
@@ -444,7 +444,7 @@ ls -la /home/rsa/tmp/
 
 Después de una migración exitosa, existen varias opciones para gestionar el repositorio original:
 
-#### **Opción 1: Archivar el repositorio**
+**Opción 1: Archivar el repositorio**
 
 Preservar el repositorio original como archivo histórico:
 
@@ -458,7 +458,7 @@ Preservar el repositorio original como archivo histórico:
 - Claramente marcado como inactivo
 - Enlaces históricos siguen funcionando
 
-#### **Opción 2: Añadir aviso de redirección**
+**Opción 2: Añadir aviso de redirección**
 
 Actualizar el README del repositorio original:
 
@@ -472,7 +472,7 @@ Este repositorio ha sido transferido a la organización institucional.
 Por favor, utilizar el nuevo repositorio para todas las contribuciones futuras.
 ```
 
-#### **Opción 3: Eliminar el repositorio original**
+**Opción 3: Eliminar el repositorio original**
 
 **Advertencia:** Esta acción es irreversible.
 
