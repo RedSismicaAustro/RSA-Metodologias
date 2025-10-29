@@ -18,6 +18,9 @@ Guía para instalar y configurar Windows Subsystem for Linux (WSL) con Ubuntu, e
 ### [Desarrollo Remoto con SSHFS](desarrollo-remoto-sshfs.md)
 Configuración de SSHFS para montar sistemas de archivos remotos, permitiendo el desarrollo en Raspberry Pi y servidores remotos utilizando herramientas locales.
 
+### [Configuración de Micromamba](configuracion-micromamba.md)
+Guía completa para instalar y configurar micromamba, un gestor de paquetes y entornos ligero. Incluye instalación, creación de entornos, gestión de paquetes, replicación de entornos y mejores prácticas para proyectos reproducibles.
+
 ---
 
 ## Tipos de Entornos en RSA
@@ -49,18 +52,20 @@ La Red Sísmica del Austro utiliza diversos entornos de desarrollo según el tip
 ### Desarrollo local con despliegue remoto
 
 1. **Configurar entorno local**: Instalar WSL/Ubuntu con herramientas de desarrollo
-2. **Montar sistema remoto**: Usar SSHFS para acceder a archivos de RPi/servidor
-3. **Desarrollar localmente**: Editar código con IDE local (VS Code, PyCharm)
-4. **Probar remotamente**: Ejecutar código en el dispositivo objetivo vía SSH
-5. **Versionar cambios**: Commit y push desde el montaje SSHFS
-6. **Desplegar**: Actualizar código en producción
+2. **Crear entorno virtual**: Usar Micromamba para aislar dependencias del proyecto
+3. **Montar sistema remoto**: Usar SSHFS para acceder a archivos de RPi/servidor
+4. **Desarrollar localmente**: Editar código con IDE local (VS Code, PyCharm)
+5. **Probar remotamente**: Ejecutar código en el dispositivo objetivo vía SSH
+6. **Versionar cambios**: Commit y push desde el montaje SSHFS
+7. **Desplegar**: Actualizar código en producción
 
 ### Desarrollo híbrido
 
 1. **Prototipo local**: Desarrollo inicial en workstation con datos de prueba
-2. **Validación remota**: Pruebas con hardware real en Raspberry Pi
-3. **Integración**: Conectar con servicios centrales (InfluxDB, MQTT)
-4. **Producción**: Despliegue en estaciones de campo
+2. **Entorno reproducible**: Crear entorno con Micromamba documentando dependencias
+3. **Validación remota**: Pruebas con hardware real en Raspberry Pi
+4. **Integración**: Conectar con servicios centrales (InfluxDB, MQTT)
+5. **Producción**: Despliegue en estaciones de campo
 
 ---
 
@@ -68,11 +73,17 @@ La Red Sísmica del Austro utiliza diversos entornos de desarrollo según el tip
 
 ### Gestión de entornos Python
 
-**Conda/Micromamba**
+**Micromamba (Recomendado)**
 ```shell
+# Instalar micromamba
+curl -Ls https://micro.mamba.pm/install.sh | bash
+
 # Crear entorno para proyecto RSA
-micromamba create -n rsa-dev python=3.11
+micromamba create -n rsa-dev python=3.11 numpy pandas matplotlib
 micromamba activate rsa-dev
+
+# Exportar para reproducibilidad
+micromamba env export --explicit > environment.lock
 ```
 
 **venv (Python nativo)**
@@ -98,8 +109,11 @@ docker run -v $(pwd):/workspace -it python:3.11 bash
 sudo apt update
 sudo apt install build-essential python3-dev git
 
-# Python
+# Python con pip
 pip install -r requirements.txt
+
+# Python con micromamba (recomendado)
+micromamba install -c conda-forge -f environment.yml
 ```
 
 ---
@@ -111,10 +125,13 @@ pip install -r requirements.txt
 ```shell
 # Instalar herramientas esenciales
 sudo apt install python3-pip python3-venv python3-dev
-pip install ipython jupyter numpy pandas matplotlib scipy
 
-# Configurar Jupyter
-jupyter notebook --generate-config
+# Crear entorno con micromamba
+micromamba create -n dev-tools python=3.11 ipython jupyter
+micromamba activate dev-tools
+
+# Instalar paquetes científicos
+micromamba install -c conda-forge numpy pandas matplotlib scipy
 ```
 
 ### Para desarrollo embebido (Raspberry Pi)
@@ -123,15 +140,21 @@ jupyter notebook --generate-config
 # En la workstation
 sudo apt install gcc-arm-linux-gnueabihf gdb-multiarch
 
-# Herramientas de desarrollo para RPi
+# Herramientas de desarrollo para RPi con micromamba
+micromamba create -n rpi-dev python=3.9
+micromamba activate rpi-dev
 pip install RPi.GPIO adafruit-blinka
 ```
 
 ### Para análisis de datos sísmicos
 
 ```shell
+# Crear entorno especializado
+micromamba create -n sismica python=3.11
+micromamba activate sismica
+
 # Librerías especializadas
-pip install obspy pandas numpy scipy matplotlib seaborn
+micromamba install -c conda-forge obspy pandas numpy scipy matplotlib seaborn
 ```
 
 ---
@@ -148,27 +171,42 @@ Mantener una estructura de directorios consistente:
 ├── institucional/     # Proyectos académicos
 └── rsa/              # Proyectos RSA
     ├── RSA-Acelerografo/
+    │   ├── environment.yml
+    │   └── environment.lock
     ├── RSA-Intern-TIG-MQTT/
+    │   ├── environment.yml
+    │   └── environment.lock
     └── RSA-Metodologias/
+        └── ...
 ```
 
 ### Aislamiento de dependencias
 
 1. **Usar entornos virtuales**: Un entorno por proyecto
-2. **Documentar dependencias**: Mantener actualizado `requirements.txt`
+2. **Documentar dependencias**: Mantener `environment.yml` y `environment.lock` actualizados
 3. **Versionar configuraciones**: Incluir archivos de configuración de entorno en Git
+4. **Usar Micromamba**: Para resolución rápida de dependencias y reproducibilidad
 
 ### Sincronización de entornos
 
 Para mantener consistencia entre desarrollo local y remoto:
 
 ```shell
-# Exportar dependencias locales
-pip freeze > requirements.txt
+# Exportar entorno local
+micromamba env export --explicit > environment.lock
 
-# Instalar en sistema remoto
-scp requirements.txt rsa@rpi:/home/rsa/
-ssh rsa@rpi "pip install -r requirements.txt"
+# Copiar a sistema remoto
+scp environment.lock rsa@rpi:/home/rsa/mi-proyecto/
+
+# Recrear en sistema remoto (si tiene micromamba)
+ssh rsa@rpi
+cd mi-proyecto
+micromamba create -n mi-proyecto -f environment.lock
+
+# Alternativa con pip
+micromamba env export > requirements.txt
+scp requirements.txt rsa@rpi:/home/rsa/mi-proyecto/
+ssh rsa@rpi "cd mi-proyecto && pip install -r requirements.txt"
 ```
 
 ### Respaldo de configuraciones
@@ -176,12 +214,11 @@ ssh rsa@rpi "pip install -r requirements.txt"
 ```shell
 # Respaldar configuraciones de desarrollo
 tar -czf ~/backups/dev-config-$(date +%Y%m%d).tar.gz \
-    ~/.bashrc ~/.vimrc ~/.gitconfig ~/scripts/
+    ~/.bashrc ~/.vimrc ~/.gitconfig ~/scripts/ \
+    ~/.local/bin/micromamba
 ```
 
 ---
-
-
 
 ## Recursos Adicionales
 
@@ -190,11 +227,16 @@ tar -czf ~/backups/dev-config-$(date +%Y%m%d).tar.gz \
 - [Git - Comandos Comunes](../git/comandos-comunes.md) - Control de versiones en entornos de desarrollo
 - [Git - Múltiples Cuentas](../git/multiples-cuentas-github.md) - Configuración SSH para acceso remoto
 
+### Guías disponibles
+
+- **Instalación de WSL y Ubuntu**: Configuración del subsistema Linux en Windows
+- **Desarrollo Remoto con SSHFS**: Montaje de sistemas de archivos remotos
+- **Configuración de Micromamba**: Gestión de entornos Python reproducibles
 
 ### Guías futuras planificadas
 
 - Instalación y configuración de Docker
-- Configuración de entornos con Conda/Micromamba
 - Setup de VS Code Remote Development
 - Configuración de Jupyter para análisis remoto
 - Cross-compilation para Raspberry Pi
+- Integración continua con GitHub Actions
