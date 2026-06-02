@@ -2,6 +2,7 @@
 tipo: indice_maestro
 actualizado: 2026-06-02
 version: 2.0
+published: false
 ---
 
 # Índice de Conocimiento RSA

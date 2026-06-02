@@ -1,4 +1,10 @@
-# MANUAL PARA PROTOTIPADO DE PCB CON IMPRESORA DE RESINA, PLASIFICADORA Y MESA UV
+---
+title: Manual PCB SLA
+parent: PCB
+nav_order: 1
+---
+
+# Manual para prototipado de PCB con impresora de resina, plasificadora y mesa UV
 
 **Enfoque:** Validación de circuitería (componentes DIP) previa a rediseño SMD y fabricación profesional en JLCPCB
 **Tiempo por prototipo (sin máscara):** 1 – 1.5 horas

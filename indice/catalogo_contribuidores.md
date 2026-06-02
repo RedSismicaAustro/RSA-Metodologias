@@ -1,6 +1,7 @@
 ---
 tipo: catalogo
 actualizado: 2026-06-02
+published: false
 ---
 
 # Catálogo de Contribuidores del Exocortex RSA

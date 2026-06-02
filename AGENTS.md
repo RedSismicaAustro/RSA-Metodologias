@@ -10,7 +10,7 @@ Está construido con **Jekyll** (tema Just the Docs) y se despliega en **GitHub 
 
 ```text
 RSA-Metodologias/
-├── docs/                    # Guías institucionales (Jekyll) — entornos, git, redes, pcb
+├── manuales/                # Manuales y guías (Jekyll) — exocortex, entornos, git, redes, pcb
 ├── conocimiento/            # Índice de contextos técnicos (links a proyectos)
 ├── decisiones/              # Architecture Decision Records (ADR)
 ├── indice/                  # Índice federado del exocortex

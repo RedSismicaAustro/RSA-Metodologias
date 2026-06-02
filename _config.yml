@@ -52,6 +52,7 @@ mermaid:
 # Excluir archivos de la construcción del sitio
 exclude:
   - CLAUDE.md
+  - AGENTS.md
   - .gitignore
   - Gemfile
   - Gemfile.lock
