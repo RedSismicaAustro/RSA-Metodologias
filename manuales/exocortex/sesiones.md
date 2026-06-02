@@ -76,14 +76,14 @@ no manejaba correctamente los payloads con campos opcionales ausentes...
 - Se aumentaron los tests de integración para cubrir payloads incompletos.
 
 **Scripts/Comandos relevantes:**
-```python
+
 def _cmd_extract_event(self, payload, client):
     params = {
         "start": payload.get("start"),
         "end": payload.get("end"),
         "station": payload.get("station", self.config["id"])
     }
-```
+
 ---
 ```
 
