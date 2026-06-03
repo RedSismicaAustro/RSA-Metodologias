@@ -34,7 +34,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 ## Sesiones por Entorno
 
 - **acelerografo**:
-  - @Milton: 2026/01/2026-01-15_optimizacion_logging.md, 2026/01/2026-01-28_correcion_bug_subida_drive.md, 2026/02/2026-02-03_refactorizacion_mqtt_coordinator.md, 2026/02/2026-02-11_migracion_trixie_bullseye.md, 2026/02/2026-02-23_conectividad_remota_estaciones.md, 2026/02/2026-02-24_planeacion_migracion_entornos_virtuales.md, 2026/04/2026-04-21_resolucion_bug_mqtt_coordinator.md, 2026/04/2026-04-23_configuracion_tailscale_estaciones.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md, 2026/04/2026-04-27_correccion_deploy_acelerografo.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md, 2026/05/2026-05-15_comandos_broadcast_mqtt.md
+  - @Milton: 2026/01/2026-01-15_optimizacion_logging.md, 2026/01/2026-01-28_correcion_bug_subida_drive.md, 2026/02/2026-02-03_refactorizacion_mqtt_coordinator.md, 2026/02/2026-02-11_migracion_trixie_bullseye.md, 2026/02/2026-02-23_conectividad_remota_estaciones.md, 2026/02/2026-02-24_planeacion_migracion_entornos_virtuales.md, 2026/04/2026-04-21_resolucion_bug_mqtt_coordinator.md, 2026/04/2026-04-23_configuracion_tailscale_estaciones.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md, 2026/04/2026-04-27_correccion_deploy_acelerografo.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md, 2026/05/2026-05-15_comandos_broadcast_mqtt.md, 2026/06/2026-06-03_unificacion_configuracion.md
 - **edge-device**:
   - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md
 - **entornos-virtuales**:
@@ -48,6 +48,8 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 
 - **arquitectura**:
   - @Milton: 2026/05/2026-05-15_comandos_broadcast_mqtt.md
+- **automatizacion**:
+  - @Milton: 2026/06/2026-06-03_unificacion_configuracion.md
 - **bash**:
   - @Milton: 2026/04/2026-04-27_correccion_deploy_acelerografo.md
 - **broadcast**:
@@ -56,6 +58,8 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - @Milton: 2026/01/2026-01-28_correcion_bug_subida_drive.md, 2026/04/2026-04-21_resolucion_bug_mqtt_coordinator.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md, 2026/05/2026-05-14_correccion_datos_duplicados_grafana.md
 - **cloudflare**:
   - @Milton: 2026/02/2026-02-23_conectividad_remota_estaciones.md
+- **configuracion**:
+  - @Milton: 2026/06/2026-06-03_unificacion_configuracion.md
 - **conectividad**:
   - @Milton: 2026/04/2026-04-23_configuracion_tailscale_estaciones.md
 - **dashboards**:
@@ -100,6 +104,8 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - @Milton: 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md
 - **os**:
   - @Milton: 2026/02/2026-02-11_migracion_trixie_bullseye.md
+- **plantillas**:
+  - @Milton: 2026/06/2026-06-03_unificacion_configuracion.md
 - **redes**:
   - @Milton: 2026/04/2026-04-23_configuracion_tailscale_estaciones.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md
 - **refactorizacion**:
@@ -120,6 +126,8 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - @Milton: 2026/05/2026-05-22_quiosco_grafana_seguro.md
 - **ui**:
   - @Milton: 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md
+- **unificacion**:
+  - @Milton: 2026/06/2026-06-03_unificacion_configuracion.md
 - **ultrasonico**:
   - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md
 - **venv**:
@@ -137,4 +145,4 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 
 ## Decisiones de Arquitectura
 
-(vacío — se irá poblando con el skill `extraer_adr`)
+- ADR-001: decisiones/001_unificacion_configuracion_acelerografo.md (configuracion, unificacion, plantillas, automatizacion) — Unificación de la configuración del acelerógrafo mediante plantillas y script de hidratación.

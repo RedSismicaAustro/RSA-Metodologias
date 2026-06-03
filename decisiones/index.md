@@ -16,4 +16,4 @@ Cada ADR documenta una decisión técnica importante: el contexto que la motivó
 
 ## ADRs Activos
 
-_(vacío — se irá poblando con el skill `extraer_adr`)_
+- [ADR-001: Unificación de la Configuración del Acelerógrafo](001_unificacion_configuracion_acelerografo.md) (Aceptado, 2026-06-03)
