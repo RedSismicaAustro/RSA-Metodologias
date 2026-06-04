@@ -54,7 +54,21 @@ Esta opción permite conservar la flexibilidad de acceso del panel web para tare
 - **Flexibilidad de Mantenimiento:** Los daemons Flask y Supervisor no requieren reinicios complejos de host y conservan el soporte para túneles SSH.
 - **Requisito de Privilegios:** Se requiere acceso root a través de un perfil de sudoers restrictivo (`/etc/sudoers.d/rsa-wifiap`) para que el usuario web `rsa` pueda manipular el AP y aplicar reglas de `iptables`.
 
+## Decisiones Adicionales (Sesión de Depuración - Tarde 2026-06-04)
+
+### 1. SSID Fijo vs Dinámico
+- **Contexto:** Inicialmente se planteó estructurar el SSID del WiFi AP de manera dinámica usando el identificador de la estación (`ACEL-{{ESTACION_ID}}-CONFIG`). Sin embargo, dado que el `estacion_id` se puede modificar desde el panel web de configuración, si un técnico cambia este parámetro estando conectado vía WiFi, la comunicación se cortaría abruptamente al cambiar el SSID dinámico en caliente.
+- **Decisión:** Se definió utilizar un SSID estático fijo (`ACEL-CONFIG`) en la configuración maestra. El script de hidratación reemplaza el marcador y genera la plantilla de `hostapd` usando este valor estático.
+- **Consecuencia:** Mayor estabilidad en operaciones de campo. El personal de soporte técnico puede cambiar el ID de la estación y reconfigurar el dispositivo sin perder la conectividad de la red WiFi local.
+
+### 2. Robustez en la inicialización (Unmask automático de hostapd)
+- **Contexto:** En Debian/Raspbian OS, el paquete `hostapd` suele estar enmascarado por defecto al instalarse, lo que bloquea su arranque e impide la activación del AP con errores del tipo `Unit hostapd.service is masked.`.
+- **Decisión:** Se integró la orden `systemctl unmask hostapd 2>/dev/null || true` en las secciones de instalación (`do_install`) y activación (`do_enable`) dentro del script de control `/usr/local/bin/wifiap`.
+- **Consecuencia:** Prevención de fallos silenciosos en la puesta en marcha de estaciones y despliegue robusto del Punto de Acceso.
+
 ## Referencias
 
 - Sesión de origen: [2026-06-04_wifi_ap_seguro.md](file:///home/rsa/git/institucional/RSA-Bitacora-LLM-Milton/sesiones/2026/06/2026-06-04_wifi_ap_seguro.md)
 - Contexto técnico relacionado: [wifiap.sh](file:///home/rsa/git/montajes/acelerografo-DEV00/scripts/task/wifiap.sh)
+- Configuración maestra: [configuracion_maestra.json](file:///home/rsa/git/montajes/acelerografo-DEV00/configuration/configuracion_maestra.json)
+
