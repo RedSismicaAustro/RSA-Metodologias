@@ -18,6 +18,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **acelerografo**:
   - `binary_to_mseed.py`: Convierte archivos binarios del acelerógrafo a formato miniSEED → [RSA-Acelerografo/docs/context/binary_to_mseed_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/binary_to_mseed_context.md)
   - `extract_segment.py`: Extrae segmentos de tiempo de archivos miniSEED → [RSA-Acelerografo/docs/context/extract_segment_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/extract_segment_context.md)
+  - `event_extractor.py`: Orquestador de extracción de eventos desde el ring buffer y miniSEED → [RSA-Acelerografo/docs/context/event_extractor_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/event_extractor_context.md)
   - `firmware`: Firmware del acelerógrafo (C) → [RSA-Acelerografo/docs/context/firmware_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/firmware_context.md)
   - `frame_decoder.py`: Decodificador y validador de tramas binarias de 2506 bytes del acelerógrafo → [RSA-Acelerografo/docs/context/frame_decoder_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/frame_decoder_context.md)
   - `gestor_archivos_acq.py`: Gestor de archivos de adquisición → [RSA-Acelerografo/docs/context/gestor_archivos_acq_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/gestor_archivos_acq_context.md)
