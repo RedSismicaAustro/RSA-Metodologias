@@ -1,6 +1,6 @@
 ---
 tipo: indice_maestro
-actualizado: 2026-06-17
+actualizado: 2026-06-18
 version: 2.0
 published: false
 ---
@@ -27,6 +27,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - `mseed_event_inspector.py`: Inspector de eventos miniSEED → [RSA-Acelerografo/docs/context/mseed_event_inspector_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/mseed_event_inspector_context.md)
   - `registro_continuo.py`: Registro continuo de datos sísmicos → [RSA-Acelerografo/docs/context/registro_continuo_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/registro_continuo_context.md)
   - `ring_buffer_store.py`: Almacén rotativo FIFO de tramas en disco con consultas temporales → [RSA-Acelerografo/docs/context/ring_buffer_store_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/ring_buffer_store_context.md)
+  - `test_ring_buffer_store.py`: Pruebas unitarias de almacenamiento rotativo, retención FIFO y simulación de regresión temporal (cambio de día) → [RSA-Acelerografo/docs/context/test_ring_buffer_store_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/test_ring_buffer_store_context.md)
   - `web_context.md`: Entorno web de configuración (Flask/Vanilla JS) → [RSA-Acelerografo/docs/context/web_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/web_context.md)
 - **tig**:
   - `docker-compose-tig-mqtt`: Stack TIG con MQTT (Telegraf/InfluxDB/Grafana) → [RSA-Intern-TIG-MQTT/docs/context/docker-compose-tig-mqtt_context.md](https://github.com/RedSismicaAustro/RSA-Intern-TIG-MQTT/blob/main/docs/context/docker-compose-tig-mqtt_context.md)
