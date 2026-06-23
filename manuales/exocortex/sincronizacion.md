@@ -1,7 +1,7 @@
 ---
 title: Sincronización y Mantenimiento
 parent: Exocortex RSA
-nav_order: 6
+nav_order: 7
 ---
 
 # Sincronización y Mantenimiento

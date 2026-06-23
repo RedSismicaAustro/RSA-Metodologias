@@ -49,4 +49,5 @@ graph TD
 - **[Consulta de Historiales](consultas.md)**: Cómo buscar conocimiento pasado.
 - **[Contexto Técnico](contexto-tecnico.md)**: Cómo documentar la arquitectura de proyectos.
 - **[Decisiones de Arquitectura (ADR)](adr.md)**: Cómo documentar decisiones técnicas.
+- **[Transición Técnica](transicion-tecnica.md)**: Cómo documentar el estado técnico de una sesión para otros agentes.
 - **[Sincronización y Mantenimiento](sincronizacion.md)**: Cómo mantener el sistema actualizado.

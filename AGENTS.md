@@ -40,6 +40,7 @@ Los siguientes skills del `RSA-Agent-Toolkit` interactúan con este repositorio:
 - **`consulta_historica`**: Lee el índice para enrutar consultas históricas.
 - **`generar_contexto`**: Actualiza `indice/indice_tematico.md` al generar contextos técnicos.
 - **`extraer_adr`**: Crea archivos en `decisiones/` y actualiza el índice.
+- **`crear_transicion_tecnica`**: Genera el documento de transición semántica en `docs/progress/` para que otros agentes retomen el contexto.
 
 ---
 
