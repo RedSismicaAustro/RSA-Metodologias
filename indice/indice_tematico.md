@@ -186,4 +186,5 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - ADR-002: decisiones/002_panel_web_configuracion_flask.md (web, configuracion, seguridad) — Selección de Flask sobre FastAPI para el servidor web de configuración del acelerógrafo por consumo de memoria.
 - ADR-003: decisiones/003_wifi_ap_aislamiento_firewall.md (wifi, seguridad, redes) — Aislamiento del puerto 5000 en la interfaz eth0 mediante iptables durante el funcionamiento del WiFi AP.
 - ADR-004: decisiones/004_implementacion_ring_buffer_acelerografo.md (acelerografo, streaming, ring-buffer, telemetria) — Implementación del Ring Buffer en archivos planos para adquisición y recuperación rápida e inmune a fallos de reloj.
+- ADR-009: decisiones/009_memoria_compartida_seqlock_ipc_streaming.md (streaming, memoria-compartida, ipc, telemetria) — Implementación de IPC en memoria compartida con protocolo Seqlock para transmisión de tramas a baja latencia.
 
