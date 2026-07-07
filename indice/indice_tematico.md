@@ -1,6 +1,6 @@
 ---
 tipo: indice_maestro
-actualizado: 2026-07-02
+actualizado: 2026-07-07
 version: 2.0
 published: false
 ---
@@ -22,11 +22,13 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - `firmware`: Firmware del acelerógrafo (C) → [RSA-Acelerografo/docs/context/firmware_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/firmware_context.md)
   - `frame_decoder.py`: Decodificador y validador de tramas binarias de 2506 bytes del acelerógrafo → [RSA-Acelerografo/docs/context/frame_decoder_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/frame_decoder_context.md)
   - `gestor_archivos_acq.py`: Gestor de archivos de adquisición → [RSA-Acelerografo/docs/context/gestor_archivos_acq_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/gestor_archivos_acq_context.md)
-  - `mqtt_coordinator.py`: Agente MQTT daemon en Raspberry Pi → [RSA-Acelerografo/docs/context/mqtt_coordinator_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/mqtt_coordinator_context.md)
+  - `mqtt_coordinator.py`: Agente MQTT daemon en Raspberry Pi; desde Fase 4 maneja detecciones GPD locales con extracción automática y registro CSV → [RSA-Acelerografo/docs/context/mqtt_coordinator_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/mqtt_coordinator_context.md)
+  - `event_logger.py`: Registro CSV mensual thread-safe de detecciones sísmicas GPD, compartido entre worker y coordinador MQTT → [RSA-Acelerografo/docs/context/event_logger_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/event_logger_context.md)
+  - `structured_logger.py`: Logger estructurado con niveles personalizados y métodos semánticos por dominio (MQTT, GPD, telemetría, ring buffer) → [RSA-Acelerografo/docs/context/structured_logger_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/structured_logger_context.md)
   - `mseed_event_extractor.py`: Extractor de eventos miniSEED → [RSA-Acelerografo/docs/context/mseed_event_extractor_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/mseed_event_extractor_context.md)
   - `mseed_event_inspector.py`: Inspector de eventos miniSEED → [RSA-Acelerografo/docs/context/mseed_event_inspector_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/mseed_event_inspector_context.md)
   - `registro_continuo.py`: Registro continuo de datos sísmicos → [RSA-Acelerografo/docs/context/registro_continuo_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/registro_continuo_context.md)
-  - `gpd_stream_worker.py`: Daemon de inferencia GPD en tiempo real — buffer deslizante 8 s, TFLite, cooldown anti-spam y publicación MQTT → [RSA-Acelerografo/docs/context/gpd_stream_worker_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/gpd_stream_worker_context.md)
+  - `gpd_stream_worker.py`: Daemon de inferencia GPD en tiempo real — buffer 8 s, TFLite, bifurcación online/offline, registro CSV mensual y extracción autónoma (Fase 4) → [RSA-Acelerografo/docs/context/gpd_stream_worker_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/gpd_stream_worker_context.md)
   - `ring_buffer_store.py`: Almacén rotativo FIFO de tramas en disco con consultas temporales → [RSA-Acelerografo/docs/context/ring_buffer_store_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/ring_buffer_store_context.md)
   - `shared_memory_publisher.py`: Publica y lee tramas decodificadas del acelerógrafo a memoria compartida (/dev/shm) usando Seqlock → [RSA-Acelerografo/docs/context/shared_memory_publisher_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/shared_memory_publisher_context.md)
   - `signal_preprocessor.py`: Módulo de downsampling (250 a 100 Hz), filtrado Butterworth pasabanda y normalización para GPD → [RSA-Acelerografo/docs/context/signal_preprocessor_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/signal_preprocessor_context.md)
@@ -46,7 +48,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 ## Sesiones por Entorno
 
 - **acelerografo**:
-  - @Milton: 2026/01/2026-01-15_optimizacion_logging.md, 2026/01/2026-01-28_correcion_bug_subida_drive.md, 2026/02/2026-02-03_refactorizacion_mqtt_coordinator.md, 2026/02/2026-02-11_migracion_trixie_bullseye.md, 2026/02/2026-02-23_conectividad_remota_estaciones.md, 2026/02/2026-02-24_planeacion_migracion_entornos_virtuales.md, 2026/04/2026-04-21_resolucion_bug_mqtt_coordinator.md, 2026/04/2026-04-23_configuracion_tailscale_estaciones.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md, 2026/04/2026-04-27_correccion_deploy_acelerografo.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md, 2026/05/2026-05-15_comandos_broadcast_mqtt.md, 2026/06/2026-06-03_unificacion_configuracion.md, 2026/06/2026-06-04_panel_web_config_fase4.md, 2026/06/2026-06-04_wifi_ap_seguro.md, 2026/06/2026-06-11_diagnostico_registro_continuo.md, 2026/06/2026-06-16_ring_buffer_acelerografo.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/06/2026-06-22_migracion_gui_analisis.md, 2026/06/2026-06-23_correccion_rotacion_ring_buffer.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-02_worker_inferencia_gpd_fase3.md
+  - @Milton: 2026/01/2026-01-15_optimizacion_logging.md, 2026/01/2026-01-28_correcion_bug_subida_drive.md, 2026/02/2026-02-03_refactorizacion_mqtt_coordinator.md, 2026/02/2026-02-11_migracion_trixie_bullseye.md, 2026/02/2026-02-23_conectividad_remota_estaciones.md, 2026/02/2026-02-24_planeacion_migracion_entornos_virtuales.md, 2026/04/2026-04-21_resolucion_bug_mqtt_coordinator.md, 2026/04/2026-04-23_configuracion_tailscale_estaciones.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md, 2026/04/2026-04-27_correccion_deploy_acelerografo.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md, 2026/05/2026-05-15_comandos_broadcast_mqtt.md, 2026/06/2026-06-03_unificacion_configuracion.md, 2026/06/2026-06-04_panel_web_config_fase4.md, 2026/06/2026-06-04_wifi_ap_seguro.md, 2026/06/2026-06-11_diagnostico_registro_continuo.md, 2026/06/2026-06-16_ring_buffer_acelerografo.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/06/2026-06-22_migracion_gui_analisis.md, 2026/06/2026-06-23_correccion_rotacion_ring_buffer.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-02_worker_inferencia_gpd_fase3.md, 2026/07/2026-07-07_pipeline_extraccion_automatica_fase4.md
 - **edge-device**:
   - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md
 - **entornos-virtuales**:
@@ -82,6 +84,10 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - @Milton: 2026/04/2026-04-27_correccion_deploy_acelerografo.md
 - **diagnostico**:
   - @Milton: 2026/06/2026-06-11_diagnostico_registro_continuo.md
+- **csv**:
+  - @Milton: 2026/07/2026-07-07_pipeline_extraccion_automatica_fase4.md
+- **deteccion-sismica**:
+  - @Milton: 2026/07/2026-07-02_worker_inferencia_gpd_fase3.md, 2026/07/2026-07-07_pipeline_extraccion_automatica_fase4.md
 - **dnsmasq**:
   - @Milton: 2026/06/2026-06-04_wifi_ap_seguro.md
 - **docker**:
@@ -94,6 +100,8 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md
 - **esp32**:
   - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md
+- **fase4**:
+  - @Milton: 2026/07/2026-07-07_pipeline_extraccion_automatica_fase4.md
 - **flask**:
   - @Milton: 2026/06/2026-06-04_panel_web_config_fase4.md
 - **flux**:
@@ -103,7 +111,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **git**:
   - @Milton: 2026/02/2026-02-23_conectividad_remota_estaciones.md
 - **gpd**:
-  - @Milton: 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-02_worker_inferencia_gpd_fase3.md
+  - @Milton: 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-02_worker_inferencia_gpd_fase3.md, 2026/07/2026-07-07_pipeline_extraccion_automatica_fase4.md
 - **gpo**:
   - @Milton: 2026/05/2026-05-26_micromamba_w11.md
 - **grafana**:
