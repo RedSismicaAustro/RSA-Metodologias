@@ -197,4 +197,5 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - ADR-004: decisiones/004_implementacion_ring_buffer_acelerografo.md (acelerografo, streaming, ring-buffer, telemetria) — Implementación del Ring Buffer en archivos planos para adquisición y recuperación rápida e inmune a fallos de reloj.
 - ADR-009: decisiones/009_memoria_compartida_seqlock_ipc_streaming.md (streaming, memoria-compartida, ipc, telemetria) — Implementación de IPC en memoria compartida con protocolo Seqlock para transmisión de tramas a baja latencia.
 - ADR-010: decisiones/010_pipeline_inferencia_gpd_streaming_stride_buffer_cooldown.md (gpd, inferencia, streaming, tflite, deteccion_sismica) — Stride de 1 s, buffer de padding de 8 s, umbrales configurables (0.95) y cooldown anti-spam (30 s) para el worker de inferencia GPD en tiempo real.
+- ADR-011: decisiones/011_bifurcacion_online_offline_pipeline_gpd_postdeteccion.md (gpd, deteccion_sismica, mqtt, streaming, fase4) — Bifurcación del pipeline GPD post-detección según `modo_adquisicion`: en online el coordinador MQTT extrae; en offline el worker extrae directamente. CSV mensual como estado compartido thread-safe.
 
