@@ -52,11 +52,11 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **acelerografo**:
   - @Milton: 2026/01/2026-01-15_optimizacion_logging.md, 2026/01/2026-01-28_correcion_bug_subida_drive.md, 2026/02/2026-02-03_refactorizacion_mqtt_coordinator.md, 2026/02/2026-02-11_migracion_trixie_bullseye.md, 2026/02/2026-02-23_conectividad_remota_estaciones.md, 2026/02/2026-02-24_planeacion_migracion_entornos_virtuales.md, 2026/04/2026-04-21_resolucion_bug_mqtt_coordinator.md, 2026/04/2026-04-23_configuracion_tailscale_estaciones.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md, 2026/04/2026-04-27_correccion_deploy_acelerografo.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md, 2026/05/2026-05-15_comandos_broadcast_mqtt.md, 2026/06/2026-06-03_unificacion_configuracion.md, 2026/06/2026-06-04_panel_web_config_fase4.md, 2026/06/2026-06-04_wifi_ap_seguro.md, 2026/06/2026-06-11_diagnostico_registro_continuo.md, 2026/06/2026-06-16_ring_buffer_acelerografo.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/06/2026-06-22_migracion_gui_analisis.md, 2026/06/2026-06-23_correccion_rotacion_ring_buffer.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-02_worker_inferencia_gpd_fase3.md, 2026/07/2026-07-07_pipeline_extraccion_automatica_fase4.md, 2026/07/2026-07-07_configuracion_pruebas_fase5_gpd.md, 2026/07/2026-07-10_depuracion_gpd_logs.md, 2026/07/2026-07-15_depuracion_mqtt_gpd.md
 - **edge-device**:
-  - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md
+  - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md, 2026/07/2026-07-28_planificacion_pasantia_sensor_ultrasonico.md
 - **entornos-virtuales**:
   - @Milton: 2026/05/2026-05-26_micromamba_w11.md, 2026/06/2026-06-22_migracion_gui_analisis.md
 - **pasantias**:
-  - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md, 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md
+  - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md, 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md, 2026/07/2026-07-28_planificacion_pasantia_sensor_ultrasonico.md
 - **tig**:
   - @Milton: 2026/02/2026-02-13_grafana_dashboard_persistence.md, 2026/02/2026-02-20_consolidacion_tig_mqtt.md, 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-14_correccion_datos_duplicados_grafana.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/05/2026-05-22_quiosco_grafana_seguro.md, 2026/07/2026-07-22_zona_horaria_nodered.md, 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md
 
@@ -146,6 +146,8 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - @Milton: 2026/06/2026-06-30_shm_preprocesador_gpd.md
 - **microc**:
   - @Milton: 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md
+- **micropython**:
+  - @Milton: 2026/07/2026-07-28_planificacion_pasantia_sensor_ultrasonico.md
 - **micromamba**:
   - @Milton: 2026/05/2026-05-26_micromamba_w11.md
 - **migracion**:
@@ -161,7 +163,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **os**:
   - @Milton: 2026/02/2026-02-11_migracion_trixie_bullseye.md
 - **pasantias**:
-  - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md, 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md
+  - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md, 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md, 2026/07/2026-07-28_planificacion_pasantia_sensor_ultrasonico.md
 - **plantillas**:
   - @Milton: 2026/06/2026-06-03_unificacion_configuracion.md
 - **plotly**:
@@ -175,7 +177,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **seguridad**:
   - @Milton: 2026/06/2026-06-04_wifi_ap_seguro.md
 - **sensor**:
-  - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md
+  - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md, 2026/07/2026-07-28_planificacion_pasantia_sensor_ultrasonico.md
 - **shell**:
   - @Milton: 2026/05/2026-05-26_micromamba_w11.md
 - **shm**:
@@ -197,7 +199,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **unificacion**:
   - @Milton: 2026/06/2026-06-03_unificacion_configuracion.md
 - **ultrasonico**:
-  - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md
+  - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md, 2026/07/2026-07-28_planificacion_pasantia_sensor_ultrasonico.md
 - **venv**:
   - @Milton: 2026/02/2026-02-11_migracion_trixie_bullseye.md, 2026/02/2026-02-23_conectividad_remota_estaciones.md, 2026/02/2026-02-24_planeacion_migracion_entornos_virtuales.md
 - **vpn**:
