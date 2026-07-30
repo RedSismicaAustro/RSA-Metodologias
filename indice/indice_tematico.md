@@ -56,7 +56,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **entornos-virtuales**:
   - @Milton: 2026/05/2026-05-26_micromamba_w11.md, 2026/06/2026-06-22_migracion_gui_analisis.md
 - **pasantias**:
-  - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md
+  - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md, 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md
 - **tig**:
   - @Milton: 2026/02/2026-02-13_grafana_dashboard_persistence.md, 2026/02/2026-02-20_consolidacion_tig_mqtt.md, 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-14_correccion_datos_duplicados_grafana.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/05/2026-05-22_quiosco_grafana_seguro.md, 2026/07/2026-07-22_zona_horaria_nodered.md, 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md
 
@@ -104,6 +104,8 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - @Milton: 2026/01/2026-01-28_correcion_bug_subida_drive.md
 - **dsp**:
   - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md
+- **dspic**:
+  - @Milton: 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md
 - **eagle**:
   - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md
 - **esp32**:
@@ -142,6 +144,8 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - @Milton: 2026/01/2026-01-15_optimizacion_logging.md, 2026/01/2026-01-28_correcion_bug_subida_drive.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/07/2026-07-10_depuracion_gpd_logs.md
 - **memoria-compartida**:
   - @Milton: 2026/06/2026-06-30_shm_preprocesador_gpd.md
+- **microc**:
+  - @Milton: 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md
 - **micromamba**:
   - @Milton: 2026/05/2026-05-26_micromamba_w11.md
 - **migracion**:
@@ -157,7 +161,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **os**:
   - @Milton: 2026/02/2026-02-11_migracion_trixie_bullseye.md
 - **pasantias**:
-  - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md
+  - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md, 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md
 - **plantillas**:
   - @Milton: 2026/06/2026-06-03_unificacion_configuracion.md
 - **plotly**:
@@ -175,7 +179,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **shell**:
   - @Milton: 2026/05/2026-05-26_micromamba_w11.md
 - **shm**:
-  - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md
+  - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md, 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md
 - **streaming**:
   - @Milton: 2026/06/2026-06-16_ring_buffer_acelerografo.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/06/2026-06-23_correccion_rotacion_ring_buffer.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-02_worker_inferencia_gpd_fase3.md
 - **streamlit**:
