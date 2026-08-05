@@ -101,7 +101,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **documentacion**:
   - @Milton: 2026/02/2026-02-20_consolidacion_tig_mqtt.md, 2026/02/2026-02-24_planeacion_migracion_entornos_virtuales.md
 - **drive**:
-  - @Milton: 2026/01/2026-01-28_correcion_bug_subida_drive.md
+  - @Milton: 2026/01/2026-01-28_correcion_bug_subida_drive.md, 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md
 - **dsp**:
   - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md
 - **dspic**:
@@ -120,6 +120,8 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - @Milton: 2026/02/2026-02-13_grafana_dashboard_persistence.md
 - **frontend**:
   - @Milton: 2026/06/2026-06-11_diagnostico_registro_continuo.md
+- **fuse**:
+  - @Milton: 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md
 - **git**:
   - @Milton: 2026/02/2026-02-23_conectividad_remota_estaciones.md
 - **gpd**:
@@ -170,6 +172,8 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - @Milton: 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md
 - **redes**:
   - @Milton: 2026/04/2026-04-23_configuracion_tailscale_estaciones.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md
+- **rclone**:
+  - @Milton: 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md
 - **refactorizacion**:
   - @Milton: 2026/02/2026-02-03_refactorizacion_mqtt_coordinator.md, 2026/06/2026-06-22_migracion_gui_analisis.md
 - **scripts**:
@@ -186,6 +190,8 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - @Milton: 2026/06/2026-06-16_ring_buffer_acelerografo.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/06/2026-06-23_correccion_rotacion_ring_buffer.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-02_worker_inferencia_gpd_fase3.md
 - **streamlit**:
   - @Milton: 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md
+- **systemd**:
+  - @Milton: 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md
 - **tailscale**:
   - @Milton: 2026/04/2026-04-23_configuracion_tailscale_estaciones.md
 - **telegraf**:
