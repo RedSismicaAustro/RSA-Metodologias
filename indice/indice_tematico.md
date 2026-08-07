@@ -58,7 +58,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **pasantias**:
   - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md, 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md, 2026/07/2026-07-28_planificacion_pasantia_sensor_ultrasonico.md
 - **tig**:
-  - @Milton: 2026/02/2026-02-13_grafana_dashboard_persistence.md, 2026/02/2026-02-20_consolidacion_tig_mqtt.md, 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-14_correccion_datos_duplicados_grafana.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/05/2026-05-22_quiosco_grafana_seguro.md, 2026/07/2026-07-22_zona_horaria_nodered.md, 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md
+  - @Milton: 2026/02/2026-02-13_grafana_dashboard_persistence.md, 2026/02/2026-02-20_consolidacion_tig_mqtt.md, 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-14_correccion_datos_duplicados_grafana.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/05/2026-05-22_quiosco_grafana_seguro.md, 2026/07/2026-07-22_zona_horaria_nodered.md, 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md, 2026/08/2026-08-06_seleccion_calendario_downsampling_event_analyzer.md
 
 ---
 
@@ -103,7 +103,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **drive**:
   - @Milton: 2026/01/2026-01-28_correcion_bug_subida_drive.md, 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md
 - **dsp**:
-  - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md
+  - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/08/2026-08-06_seleccion_calendario_downsampling_event_analyzer.md
 - **dspic**:
   - @Milton: 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md
 - **eagle**:
@@ -111,7 +111,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **esp32**:
   - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md
 - **event-analyzer**:
-  - @Milton: 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md
+  - @Milton: 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/08/2026-08-06_seleccion_calendario_downsampling_event_analyzer.md
 - **fase4**:
   - @Milton: 2026/07/2026-07-07_pipeline_extraccion_automatica_fase4.md
 - **flask**:
@@ -169,7 +169,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **plantillas**:
   - @Milton: 2026/06/2026-06-03_unificacion_configuracion.md
 - **plotly**:
-  - @Milton: 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md
+  - @Milton: 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/08/2026-08-06_seleccion_calendario_downsampling_event_analyzer.md
 - **redes**:
   - @Milton: 2026/04/2026-04-23_configuracion_tailscale_estaciones.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md
 - **rclone**:
@@ -189,7 +189,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **streaming**:
   - @Milton: 2026/06/2026-06-16_ring_buffer_acelerografo.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/06/2026-06-23_correccion_rotacion_ring_buffer.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-02_worker_inferencia_gpd_fase3.md
 - **streamlit**:
-  - @Milton: 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md
+  - @Milton: 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/08/2026-08-06_seleccion_calendario_downsampling_event_analyzer.md
 - **systemd**:
   - @Milton: 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md
 - **tailscale**:
@@ -235,4 +235,5 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - ADR-010: decisiones/010_pipeline_inferencia_gpd_streaming_stride_buffer_cooldown.md (gpd, inferencia, streaming, tflite, deteccion_sismica) — Stride de 1 s, buffer de padding de 8 s, umbrales configurables (0.95) y cooldown anti-spam (30 s) para el worker de inferencia GPD en tiempo real.
 - ADR-011: decisiones/011_bifurcacion_online_offline_pipeline_gpd_postdeteccion.md (gpd, deteccion_sismica, mqtt, streaming, fase4) — Bifurcación del pipeline GPD post-detección según `modo_adquisicion`: en online el coordinador MQTT extrae; en offline el worker extrae directamente. CSV mensual como estado compartido thread-safe.
 - ADR-012: decisiones/012_formato_timestamp_extraccion_mseed.md (gpd, mseed, extraccion, formato, time) — Adaptación de formato de timestamp start_str en coordinador y worker para usar el formato heredado de la RSA.
+- ADR-013: decisiones/013_downsampling_trazas_y_estado_reactivo_event_analyzer.md (event-analyzer, streamlit, plotly, dsp, downsampling, performance) — Diezmado dinámico de trazas (max 3000 pts) y selección reactiva por calendario en Event Analyzer para evitar congestión de WebSockets y demoras UI.
 
