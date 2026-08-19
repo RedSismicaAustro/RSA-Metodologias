@@ -40,9 +40,11 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - `mseed_event_extractor.py`: Interfaz gráfica interactiva para seleccionar, previsualizar y exportar eventos sísmicos en formato miniSEED. → [RSA-Analisis-Datos/docs/context/mseed_event_extractor_context.md](https://github.com/RedSismicaAustro/RSA-Analisis-Datos/blob/main/docs/context/mseed_event_extractor_context.md)
   - `mseed_event_inspector.py`: Interfaz gráfica para la visualización de formas de onda e inspección detallada de metadatos de archivos miniSEED. → [RSA-Analisis-Datos/docs/context/mseed_event_inspector_context.md](https://github.com/RedSismicaAustro/RSA-Analisis-Datos/blob/main/docs/context/mseed_event_inspector_context.md)
 - **tig**:
-  - `docker-compose-tig-mqtt`: Stack TIG con MQTT (Telegraf/InfluxDB/Grafana) → [RSA-Intern-TIG-MQTT/docs/context/docker-compose-tig-mqtt_context.md](https://github.com/RedSismicaAustro/RSA-Intern-TIG-MQTT/blob/main/docs/context/docker-compose-tig-mqtt_context.md)
-  - `docker-compose-nodered`: Stack Node-RED → [RSA-Intern-TIG-MQTT/docs/context/docker-compose-nodered_context.md](https://github.com/RedSismicaAustro/RSA-Intern-TIG-MQTT/blob/main/docs/context/docker-compose-nodered_context.md)
-  - `regional_event_correlator`: Servicio daemon de correlación de eventos sísmicos regionales MQTT → [RSA-Intern-TIG-MQTT/docs/context/regional_event_correlator_context.md](https://github.com/RedSismicaAustro/RSA-Intern-TIG-MQTT/blob/main/docs/context/regional_event_correlator_context.md)
+  - `docker-compose-tig-mqtt`: Stack TIG con MQTT (Telegraf/InfluxDB/Grafana/Correlator/Event-Analyzer) → [RSA-Intern-TIG-MQTT/docs/context/docker-compose-tig-mqtt_context.md](https://github.com/RedSismicaAustro/RSA-Intern-TIG-MQTT/blob/main/docs/context/docker-compose-tig-mqtt_context.md)
+  - `docker-compose-nodered`: Stack Node-RED con extracción manual y registro automático de metadatos en InfluxDB → [RSA-Intern-TIG-MQTT/docs/context/docker-compose-nodered_context.md](https://github.com/RedSismicaAustro/RSA-Intern-TIG-MQTT/blob/main/docs/context/docker-compose-nodered_context.md)
+  - `regional_event_correlator`: Servicio daemon de correlación regional MQTT con emisión broadcast y metadatos a InfluxDB → [RSA-Intern-TIG-MQTT/docs/context/regional_event_correlator_context.md](https://github.com/RedSismicaAustro/RSA-Intern-TIG-MQTT/blob/main/docs/context/regional_event_correlator_context.md)
+  - `event_analyzer`: Visualizador web interactivo (Streamlit + ObsPy + Plotly) con índice rápido en InfluxDB y clasificación cerrada MQTT → [RSA-Intern-TIG-MQTT/docs/context/event_analyzer_context.md](https://github.com/RedSismicaAustro/RSA-Intern-TIG-MQTT/blob/main/docs/context/event_analyzer_context.md)
+  - `influx_client.py`: Módulo de consultas analíticas Flux y publicación de clasificaciones de eventos sísmicos con QoS 1 → [RSA-Intern-TIG-MQTT/docs/context/influx_client_context.md](https://github.com/RedSismicaAustro/RSA-Intern-TIG-MQTT/blob/main/docs/context/influx_client_context.md)
 - **edge-device**: (pendiente)
 
 ---
@@ -58,7 +60,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **pasantias**:
   - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md, 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md, 2026/07/2026-07-28_planificacion_pasantia_sensor_ultrasonico.md
 - **tig**:
-  - @Milton: 2026/02/2026-02-13_grafana_dashboard_persistence.md, 2026/02/2026-02-20_consolidacion_tig_mqtt.md, 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-14_correccion_datos_duplicados_grafana.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/05/2026-05-22_quiosco_grafana_seguro.md, 2026/07/2026-07-22_zona_horaria_nodered.md, 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md, 2026/08/2026-08-06_seleccion_calendario_downsampling_event_analyzer.md
+  - @Milton: 2026/02/2026-02-13_grafana_dashboard_persistence.md, 2026/02/2026-02-20_consolidacion_tig_mqtt.md, 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-14_correccion_datos_duplicados_grafana.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/05/2026-05-22_quiosco_grafana_seguro.md, 2026/07/2026-07-22_zona_horaria_nodered.md, 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md, 2026/08/2026-08-06_seleccion_calendario_downsampling_event_analyzer.md, 2026/08/2026-08-19_integracion_influxdb_event_analyzer_nodered.md
 
 ---
 
@@ -111,7 +113,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **esp32**:
   - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md
 - **event-analyzer**:
-  - @Milton: 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/08/2026-08-06_seleccion_calendario_downsampling_event_analyzer.md
+  - @Milton: 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/08/2026-08-06_seleccion_calendario_downsampling_event_analyzer.md, 2026/08/2026-08-19_integracion_influxdb_event_analyzer_nodered.md
 - **fase4**:
   - @Milton: 2026/07/2026-07-07_pipeline_extraccion_automatica_fase4.md
 - **flask**:
@@ -135,7 +137,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **hostapd**:
   - @Milton: 2026/06/2026-06-04_wifi_ap_seguro.md
 - **influxdb**:
-  - @Milton: 2026/02/2026-02-13_grafana_dashboard_persistence.md, 2026/05/2026-05-14_correccion_datos_duplicados_grafana.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md
+  - @Milton: 2026/02/2026-02-13_grafana_dashboard_persistence.md, 2026/05/2026-05-14_correccion_datos_duplicados_grafana.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md, 2026/08/2026-08-19_integracion_influxdb_event_analyzer_nodered.md
 - **json**:
   - @Milton: 2026/06/2026-06-11_diagnostico_registro_continuo.md
 - **kicad**:
@@ -155,11 +157,11 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **migracion**:
   - @Milton: 2026/02/2026-02-11_migracion_trixie_bullseye.md
 - **mqtt**:
-  - @Milton: 2026/02/2026-02-03_refactorizacion_mqtt_coordinator.md, 2026/02/2026-02-20_consolidacion_tig_mqtt.md, 2026/04/2026-04-21_resolucion_bug_mqtt_coordinator.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md, 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/05/2026-05-15_comandos_broadcast_mqtt.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/07/2026-07-07_configuracion_pruebas_fase5_gpd.md, 2026/07/2026-07-15_depuracion_mqtt_gpd.md, 2026/07/2026-07-22_zona_horaria_nodered.md, 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md
+  - @Milton: 2026/02/2026-02-03_refactorizacion_mqtt_coordinator.md, 2026/02/2026-02-20_consolidacion_tig_mqtt.md, 2026/04/2026-04-21_resolucion_bug_mqtt_coordinator.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md, 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/05/2026-05-15_comandos_broadcast_mqtt.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/07/2026-07-07_configuracion_pruebas_fase5_gpd.md, 2026/07/2026-07-15_depuracion_mqtt_gpd.md, 2026/07/2026-07-22_zona_horaria_nodered.md, 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md, 2026/08/2026-08-19_integracion_influxdb_event_analyzer_nodered.md
 - **mseed**:
   - @Milton: 2026/01/2026-01-15_optimizacion_logging.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md, 2026/06/2026-06-16_ring_buffer_acelerografo.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md
 - **node-red**:
-  - @Milton: 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/07/2026-07-22_zona_horaria_nodered.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md
+  - @Milton: 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/07/2026-07-22_zona_horaria_nodered.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md, 2026/08/2026-08-19_integracion_influxdb_event_analyzer_nodered.md
 - **obspy**:
   - @Milton: 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md
 - **os**:
@@ -237,4 +239,5 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - ADR-012: decisiones/012_formato_timestamp_extraccion_mseed.md (gpd, mseed, extraccion, formato, time) — Adaptación de formato de timestamp start_str en coordinador y worker para usar el formato heredado de la RSA.
 - ADR-013: decisiones/013_downsampling_trazas_y_estado_reactivo_event_analyzer.md (event-analyzer, streamlit, plotly, dsp, downsampling, performance) — Diezmado dinámico de trazas (max 3000 pts) y selección reactiva por calendario en Event Analyzer para evitar congestión de WebSockets y demoras UI.
 - ADR-014: decisiones/014_resampling_dinamico_alta_resolucion_plotly_resampler.md (event-analyzer, plotly-resampler, downsampling, sismologia, performance, docker) — Resampling dinámico de alta resolución mediante plotly-resampler para picada exacta de fases sísmicas P y S.
+- ADR-015: decisiones/015_indice_eventos_sismicos_influxdb_clasificacion_mqtt.md (influxdb, mqtt, telegraf, event-analyzer, nodered, correlador, streaming) — Índice centralizado de eventos sísmicos en InfluxDB, ingesta desacoplada MQTT QoS 1 con Telegraf, Lazy Loading de trazas MiniSEED y ciclo cerrado de clasificación.
 
