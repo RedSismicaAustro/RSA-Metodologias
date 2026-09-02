@@ -22,12 +22,14 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - `firmware`: Firmware del acelerógrafo (C) → [RSA-Acelerografo/docs/context/firmware_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/firmware_context.md)
   - `frame_decoder.py`: Decodificador y validador de tramas binarias de 2506 bytes del acelerógrafo → [RSA-Acelerografo/docs/context/frame_decoder_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/frame_decoder_context.md)
   - `gestor_archivos_acq.py`: Gestor de archivos de adquisición → [RSA-Acelerografo/docs/context/gestor_archivos_acq_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/gestor_archivos_acq_context.md)
-  - `mqtt_coordinator.py`: Agente MQTT daemon en Raspberry Pi; desde Fase 4 maneja detecciones GPD locales con extracción automática y registro CSV → [RSA-Acelerografo/docs/context/mqtt_coordinator_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/mqtt_coordinator_context.md)
+  - `acquisition_watchdog.py`: Monitor de latencia y salud de adquisición del Ring Buffer con emisión periódica de estado en MQTT → [RSA-Acelerografo/docs/context/acquisition_watchdog_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/acquisition_watchdog_context.md)
+  - `stream_processor.py`: Daemon de lectura del named pipe (/tmp/my_pipe) al Ring Buffer con reintentos resilientes y backoff exponencial → [RSA-Acelerografo/docs/context/stream_processor_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/stream_processor_context.md)
+  - `mqtt_coordinator.py`: Agente MQTT daemon en Raspberry Pi; maneja telemetría de salud, watchdog de latencia del Ring Buffer (status/acquisition) y detecciones GPD locales → [RSA-Acelerografo/docs/context/mqtt_coordinator_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/mqtt_coordinator_context.md)
   - `event_logger.py`: Registro CSV mensual thread-safe de detecciones sísmicas GPD, compartido entre worker y coordinador MQTT → [RSA-Acelerografo/docs/context/event_logger_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/event_logger_context.md)
   - `structured_logger.py`: Logger estructurado con niveles personalizados y métodos semánticos por dominio (MQTT, GPD, telemetría, ring buffer) → [RSA-Acelerografo/docs/context/structured_logger_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/structured_logger_context.md)
   - `mseed_event_extractor.py`: Extractor de eventos miniSEED → [RSA-Acelerografo/docs/context/mseed_event_extractor_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/mseed_event_extractor_context.md)
   - `mseed_event_inspector.py`: Inspector de eventos miniSEED → [RSA-Acelerografo/docs/context/mseed_event_inspector_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/mseed_event_inspector_context.md)
-  - `registro_continuo.py`: Registro continuo de datos sísmicos → [RSA-Acelerografo/docs/context/registro_continuo_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/registro_continuo_context.md)
+  - `registro_continuo.py`: Registro continuo de datos sísmicos (v4.5.0 en C) gobernado por systemd con auto-reinicio y reseteo por hardware dsPIC → [RSA-Acelerografo/docs/context/registro_continuo_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/registro_continuo_context.md)
   - `gpd_stream_worker.py`: Daemon de inferencia GPD en tiempo real — buffer 8 s, TFLite, bifurcación online/offline, registro CSV mensual y extracción autónoma (Fase 4) → [RSA-Acelerografo/docs/context/gpd_stream_worker_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/gpd_stream_worker_context.md)
   - `ring_buffer_store.py`: Almacén rotativo FIFO de tramas en disco con consultas temporales → [RSA-Acelerografo/docs/context/ring_buffer_store_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/ring_buffer_store_context.md)
   - `shared_memory_publisher.py`: Publica y lee tramas decodificadas del acelerógrafo a memoria compartida (/dev/shm) usando Seqlock → [RSA-Acelerografo/docs/context/shared_memory_publisher_context.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/context/shared_memory_publisher_context.md)
@@ -57,7 +59,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 ## Sesiones por Entorno
 
 - **acelerografo**:
-  - @Milton: 2026/01/2026-01-15_optimizacion_logging.md, 2026/01/2026-01-28_correcion_bug_subida_drive.md, 2026/02/2026-02-03_refactorizacion_mqtt_coordinator.md, 2026/02/2026-02-11_migracion_trixie_bullseye.md, 2026/02/2026-02-23_conectividad_remota_estaciones.md, 2026/02/2026-02-24_planeacion_migracion_entornos_virtuales.md, 2026/04/2026-04-21_resolucion_bug_mqtt_coordinator.md, 2026/04/2026-04-23_configuracion_tailscale_estaciones.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md, 2026/04/2026-04-27_correccion_deploy_acelerografo.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md, 2026/05/2026-05-15_comandos_broadcast_mqtt.md, 2026/06/2026-06-03_unificacion_configuracion.md, 2026/06/2026-06-04_panel_web_config_fase4.md, 2026/06/2026-06-04_wifi_ap_seguro.md, 2026/06/2026-06-11_diagnostico_registro_continuo.md, 2026/06/2026-06-16_ring_buffer_acelerografo.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/06/2026-06-22_migracion_gui_analisis.md, 2026/06/2026-06-23_correccion_rotacion_ring_buffer.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-02_worker_inferencia_gpd_fase3.md, 2026/07/2026-07-07_pipeline_extraccion_automatica_fase4.md, 2026/07/2026-07-07_configuracion_pruebas_fase5_gpd.md, 2026/07/2026-07-10_depuracion_gpd_logs.md, 2026/07/2026-07-15_depuracion_mqtt_gpd.md, 2026/09/2026-09-01_automatizacion_despliegue_acelerografo.md, 2026/09/2026-09-01_diagnostico_adquisicion_cha01.md
+  - @Milton: 2026/01/2026-01-15_optimizacion_logging.md, 2026/01/2026-01-28_correcion_bug_subida_drive.md, 2026/02/2026-02-03_refactorizacion_mqtt_coordinator.md, 2026/02/2026-02-11_migracion_trixie_bullseye.md, 2026/02/2026-02-23_conectividad_remota_estaciones.md, 2026/02/2026-02-24_planeacion_migracion_entornos_virtuales.md, 2026/04/2026-04-21_resolucion_bug_mqtt_coordinator.md, 2026/04/2026-04-23_configuracion_tailscale_estaciones.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md, 2026/04/2026-04-27_correccion_deploy_acelerografo.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md, 2026/05/2026-05-15_comandos_broadcast_mqtt.md, 2026/06/2026-06-03_unificacion_configuracion.md, 2026/06/2026-06-04_panel_web_config_fase4.md, 2026/06/2026-06-04_wifi_ap_seguro.md, 2026/06/2026-06-11_diagnostico_registro_continuo.md, 2026/06/2026-06-16_ring_buffer_acelerografo.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/06/2026-06-22_migracion_gui_analisis.md, 2026/06/2026-06-23_correccion_rotacion_ring_buffer.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-02_worker_inferencia_gpd_fase3.md, 2026/07/2026-07-07_pipeline_extraccion_automatica_fase4.md, 2026/07/2026-07-07_configuracion_pruebas_fase5_gpd.md, 2026/07/2026-07-10_depuracion_gpd_logs.md, 2026/07/2026-07-15_depuracion_mqtt_gpd.md, 2026/09/2026-09-01_automatizacion_despliegue_acelerografo.md, 2026/09/2026-09-01_diagnostico_adquisicion_cha01.md, 2026/09/2026-09-02_resiliencia_pipeline_adquisicion.md
 - **edge-device**:
   - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md, 2026/07/2026-07-28_planificacion_pasantia_sensor_ultrasonico.md
 - **entornos-virtuales**:
@@ -72,7 +74,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 ## Sesiones por Tema
 
 - **adquisicion**:
-  - @Milton: 2026/09/2026-09-01_diagnostico_adquisicion_cha01.md
+  - @Milton: 2026/09/2026-09-01_diagnostico_adquisicion_cha01.md, 2026/09/2026-09-02_resiliencia_pipeline_adquisicion.md
 - **arquitectura**:
   - @Milton: 2026/05/2026-05-15_comandos_broadcast_mqtt.md
 - **automatizacion**:
@@ -168,13 +170,13 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **migracion**:
   - @Milton: 2026/02/2026-02-11_migracion_trixie_bullseye.md
 - **mqtt**:
-  - @Milton: 2026/02/2026-02-03_refactorizacion_mqtt_coordinator.md, 2026/02/2026-02-20_consolidacion_tig_mqtt.md, 2026/04/2026-04-21_resolucion_bug_mqtt_coordinator.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md, 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/05/2026-05-15_comandos_broadcast_mqtt.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/07/2026-07-07_configuracion_pruebas_fase5_gpd.md, 2026/07/2026-07-15_depuracion_mqtt_gpd.md, 2026/07/2026-07-22_zona_horaria_nodered.md, 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md, 2026/08/2026-08-19_integracion_influxdb_event_analyzer_nodered.md, 2026/08/2026-08-26_plan_implementacion_fase5_respaldo_recuperacion.md, 2026/08/2026-08-27_respaldo_influxdb_multiservidor_fase5.md, 2026/09/2026-09-01_automatizacion_despliegue_acelerografo.md
+  - @Milton: 2026/02/2026-02-03_refactorizacion_mqtt_coordinator.md, 2026/02/2026-02-20_consolidacion_tig_mqtt.md, 2026/04/2026-04-21_resolucion_bug_mqtt_coordinator.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md, 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/05/2026-05-15_comandos_broadcast_mqtt.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/07/2026-07-07_configuracion_pruebas_fase5_gpd.md, 2026/07/2026-07-15_depuracion_mqtt_gpd.md, 2026/07/2026-07-22_zona_horaria_nodered.md, 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md, 2026/08/2026-08-19_integracion_influxdb_event_analyzer_nodered.md, 2026/08/2026-08-26_plan_implementacion_fase5_respaldo_recuperacion.md, 2026/08/2026-08-27_respaldo_influxdb_multiservidor_fase5.md, 2026/09/2026-09-01_automatizacion_despliegue_acelerografo.md, 2026/09/2026-09-02_resiliencia_pipeline_adquisicion.md
 - **multi-servidor**:
   - @Milton: 2026/08/2026-08-27_respaldo_influxdb_multiservidor_fase5.md
 - **mseed**:
   - @Milton: 2026/01/2026-01-15_optimizacion_logging.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md, 2026/06/2026-06-16_ring_buffer_acelerografo.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/08/2026-08-21_diagnostico_resolucion_trazas_correlador_event_analyzer.md, 2026/08/2026-08-25_correccion_resolucion_trazas_migracion_influxdb.md
 - **named-pipe**:
-  - @Milton: 2026/09/2026-09-01_diagnostico_adquisicion_cha01.md
+  - @Milton: 2026/09/2026-09-01_diagnostico_adquisicion_cha01.md, 2026/09/2026-09-02_resiliencia_pipeline_adquisicion.md
 - **node-red**:
   - @Milton: 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/07/2026-07-22_zona_horaria_nodered.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md, 2026/08/2026-08-19_integracion_influxdb_event_analyzer_nodered.md
 - **obspy**:
@@ -193,6 +195,8 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - @Milton: 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/08/2026-08-26_plan_implementacion_fase5_respaldo_recuperacion.md, 2026/08/2026-08-27_respaldo_influxdb_multiservidor_fase5.md, 2026/08/2026-08-31_reubicacion_respaldos_influxdb_gdrive.md
 - **refactorizacion**:
   - @Milton: 2026/02/2026-02-03_refactorizacion_mqtt_coordinator.md, 2026/06/2026-06-22_migracion_gui_analisis.md
+- **resiliencia**:
+  - @Milton: 2026/09/2026-09-02_resiliencia_pipeline_adquisicion.md
 - **scripts**:
   - @Milton: 2026/04/2026-04-27_correccion_deploy_acelerografo.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md
 - **seguridad**:
@@ -204,13 +208,13 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **shm**:
   - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md, 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md
 - **streaming**:
-  - @Milton: 2026/06/2026-06-16_ring_buffer_acelerografo.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/06/2026-06-23_correccion_rotacion_ring_buffer.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-02_worker_inferencia_gpd_fase3.md
+  - @Milton: 2026/06/2026-06-16_ring_buffer_acelerografo.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/06/2026-06-23_correccion_rotacion_ring_buffer.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-02_worker_inferencia_gpd_fase3.md, 2026/09/2026-09-02_resiliencia_pipeline_adquisicion.md
 - **supervisor**:
   - @Milton: 2026/09/2026-09-01_diagnostico_adquisicion_cha01.md
 - **streamlit**:
   - @Milton: 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/08/2026-08-06_seleccion_calendario_downsampling_event_analyzer.md
 - **systemd**:
-  - @Milton: 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/08/2026-08-27_respaldo_influxdb_multiservidor_fase5.md
+  - @Milton: 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/08/2026-08-27_respaldo_influxdb_multiservidor_fase5.md, 2026/09/2026-09-02_resiliencia_pipeline_adquisicion.md
 - **tailscale**:
   - @Milton: 2026/04/2026-04-23_configuracion_tailscale_estaciones.md
 - **telegraf**:
@@ -259,6 +263,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - ADR-015: decisiones/015_indice_eventos_sismicos_influxdb_clasificacion_mqtt.md (influxdb, mqtt, telegraf, event-analyzer, nodered, correlador, streaming) — Índice centralizado de eventos sísmicos en InfluxDB, ingesta desacoplada MQTT QoS 1 con Telegraf, Lazy Loading de trazas MiniSEED y ciclo cerrado de clasificación.
 - ADR-016: decisiones/016_resolucion_global_trazas_y_determinacion_temporal_event_id.md (event-analyzer, correlador, miniseed, influxdb, mqtt, lazy-loading, consistencia-temporal, arquitectura) — Resolución global de trazas MiniSEED en Event Analyzer, aislamiento de datos de registro continuo y generación determinista del event_id a partir de dt_min en el Correlador Regional.
 - ADR-017: decisiones/017_respaldo_influxdb_y_arquitectura_multiservidor_con_sesion_persistente_mqtt.md (influxdb, backup, restore, rclone, gdrive, systemd, multi-servidor, mqtt, sesion-persistente, clean_session, docker-compose, profiles, arquitectura) — Protocolo de respaldo híbrido de InfluxDB (snapshot + CSV), automatización portable con plantillas systemd y arquitectura multi-servidor con sesión persistente MQTT.
+- ADR-018: decisiones/018_resiliencia_pipeline_adquisicion_acelerografo.md (acelerografo, resiliencia, adquisicion, systemd, dspic, named_pipe, watchdog, mqtt, supervisor) — Arquitectura de defensa en profundidad en 4 capas para auto-recuperación y desacoplamiento del pipeline de adquisición.
 
 ---
 
