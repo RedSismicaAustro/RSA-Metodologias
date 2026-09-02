@@ -1,6 +1,6 @@
 ---
 tipo: indice_maestro
-actualizado: 2026-09-01
+actualizado: 2026-09-02
 version: 2.0
 published: false
 ---
@@ -259,4 +259,17 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - ADR-015: decisiones/015_indice_eventos_sismicos_influxdb_clasificacion_mqtt.md (influxdb, mqtt, telegraf, event-analyzer, nodered, correlador, streaming) — Índice centralizado de eventos sísmicos en InfluxDB, ingesta desacoplada MQTT QoS 1 con Telegraf, Lazy Loading de trazas MiniSEED y ciclo cerrado de clasificación.
 - ADR-016: decisiones/016_resolucion_global_trazas_y_determinacion_temporal_event_id.md (event-analyzer, correlador, miniseed, influxdb, mqtt, lazy-loading, consistencia-temporal, arquitectura) — Resolución global de trazas MiniSEED en Event Analyzer, aislamiento de datos de registro continuo y generación determinista del event_id a partir de dt_min en el Correlador Regional.
 - ADR-017: decisiones/017_respaldo_influxdb_y_arquitectura_multiservidor_con_sesion_persistente_mqtt.md (influxdb, backup, restore, rclone, gdrive, systemd, multi-servidor, mqtt, sesion-persistente, clean_session, docker-compose, profiles, arquitectura) — Protocolo de respaldo híbrido de InfluxDB (snapshot + CSV), automatización portable con plantillas systemd y arquitectura multi-servidor con sesión persistente MQTT.
+
+---
+
+## Diagnósticos Técnicos
+
+- **acelerografo**:
+  - `2026-09-01` — Parada de adquisición CHA1: Fallo en cascada por named pipe tras reinicio y bloqueo de subidas a Google Drive.
+    Estado: **pendiente**.
+    → [2026-09-01_diagnostico_parada_adquisicion_cha01.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/analysis/2026-09-01_diagnostico_parada_adquisicion_cha01.md)
+  - `2026-09-01` — Automatización y saneamiento del despliegue en estaciones acelerográficas (segregación main/develop y actualización OTA vía MQTT).
+    Estado: **pendiente**.
+    → [2026-09-01_diagnostico_automatizacion_despliegue.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/analysis/2026-09-01_diagnostico_automatizacion_despliegue.md)
+
 
