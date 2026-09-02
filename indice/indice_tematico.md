@@ -271,10 +271,13 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 
 - **acelerografo**:
   - `2026-09-01` — Parada de adquisición CHA1: Fallo en cascada por named pipe tras reinicio y bloqueo de subidas a Google Drive.
-    Estado: **pendiente**.
-    → [2026-09-01_diagnostico_parada_adquisicion_cha01.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/analysis/2026-09-01_diagnostico_parada_adquisicion_cha01.md)
+    Estado: **resuelto** (2026-09-02). Produjo: ADR-018, blueprint 2026-09-02_plan_resiliencia_pipeline_adquisicion.md.
   - `2026-09-01` — Automatización y saneamiento del despliegue en estaciones acelerográficas (segregación main/develop y actualización OTA vía MQTT).
     Estado: **pendiente**.
     → [2026-09-01_diagnostico_automatizacion_despliegue.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/analysis/2026-09-01_diagnostico_automatizacion_despliegue.md)
+- **tig**:
+  - `2026-09-02` — Ingesta, persistencia y alertamiento de la telemetría status/acquisition en el Stack TIG.
+    Estado: **pendiente**.
+    → [2026-09-02_diagnostico_ingesta_telemetria_status_acquisition.md](https://github.com/RedSismicaAustro/RSA-Intern-TIG-MQTT/blob/main/docs/analysis/2026-09-02_diagnostico_ingesta_telemetria_status_acquisition.md)
 
 
