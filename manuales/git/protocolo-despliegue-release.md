@@ -25,22 +25,22 @@ Este protocolo establece un flujo de **Despliegue Escalonado con Puertas de Cali
 
 ```mermaid
 graph LR
-    subgraph 1. Desarrollo ["1. Desarrollo (Oficina)"]
-        DEV["DEV-00<br/>Ramas feature / fix"] -->|Merge / PR| DEV_BRANCH["develop"]
+    subgraph S1 ["1. Desarrollo (Oficina)"]
+        DEV["DEV-00<br/>Ramas feature / fix"] -->|"Merge / PR"| DEV_BRANCH["develop"]
     end
 
-    subgraph 2. Staging ["2. Staging / Prueba (Casa / Remoto)"]
-        DEV_BRANCH -->|git pull| TEST["TEST-01 (DEV-01)<br/>Hardware Real (Tailscale)"]
-        TEST -->|Checklist + Soak Test| VAL{"¿Validación OK?<br/>(1 a 24 horas)"}
+    subgraph S2 ["2. Staging / Prueba (Casa / Remoto)"]
+        DEV_BRANCH -->|"git pull"| TEST["TEST-01 (DEV-01)<br/>Hardware Real (Tailscale)"]
+        TEST -->|"Checklist + Soak Test"| VAL{"¿Validación OK?<br/>(1 a 24 horas)"}
     end
 
-    subgraph 3. Release ["3. Promoción"]
-        VAL -- Sí --> MAIN["main<br/>(Git Tag vX.Y.Z)"]
+    subgraph S3 ["3. Release"]
+        VAL -- "Sí" --> MAIN["main<br/>(Git Tag vX.Y.Z)"]
     end
 
-    subgraph 4. Producción ["4. Producción (Campo)"]
-        MAIN -->|Paso 1: Estación Piloto| CANARY["Estación Piloto<br/>(ej. CHA01)"]
-        CANARY -->|Telemetría OK (24h)| PROD_ALL["Resto de la Flota<br/>(CHA02, etc.)"]
+    subgraph S4 ["4. Producción (Campo)"]
+        MAIN -->|"Paso 1: Estación Piloto"| CANARY["Estación Piloto<br/>(ej. CHA01)"]
+        CANARY -->|"Telemetría OK (24h)"| PROD_ALL["Resto de la Flota<br/>(CHA02, etc.)"]
     end
 ```
 
