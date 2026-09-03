@@ -27,6 +27,8 @@ Configuración detallada para trabajar con múltiples cuentas de GitHub en un mi
 ### [Migración de Repositorios](migracion-repositorios.md)
 Procedimiento completo para migrar repositorios desde cuentas personales hacia la organización Red-Sismica-del-Austro, preservando historial, ramas, tags y autoría original.
 
+### [Protocolo de Despliegue y Release](protocolo-despliegue-release.md)
+Metodología institucional para el desarrollo en `DEV-00`, validación y soak test en staging (`TEST-01`), versionado semántico inmutable (`vMAJOR.MINOR.PATCH`), changelog y despliegue canario seguro en estaciones sísmicas remotas.
 
 ---
 

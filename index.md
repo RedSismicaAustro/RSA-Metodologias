@@ -25,7 +25,7 @@ Sistema de memoria externa asistido por IA para el equipo RSA. Cubre el desplieg
 Configuración de entornos de desarrollo: WSL, desarrollo remoto con SSHFS, gestión de ambientes con Micromamba.
 
 ### 🔀 [Git](manuales/git/)
-Metodologías de control de versiones: comandos esenciales, estrategia de ramas, formato de commits, gestión de múltiples cuentas de GitHub.
+Metodologías de control de versiones: comandos esenciales, estrategia de ramas, formato de commits, protocolo de despliegue y release con versionado semántico (SemVer), gestión de múltiples cuentas de GitHub.
 
 ### 🌐 [Redes](manuales/redes/)
 Configuración de hardware de red para estaciones de campo: adaptadores WiFi para Raspberry Pi, protocolos de comunicación.

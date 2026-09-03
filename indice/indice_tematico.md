@@ -1,6 +1,6 @@
 ---
 tipo: indice_maestro
-actualizado: 2026-09-02
+actualizado: 2026-09-03
 version: 2.0
 published: false
 ---
