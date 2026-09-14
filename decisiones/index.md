@@ -21,3 +21,4 @@ Cada ADR documenta una decisión técnica importante: el contexto que la motivó
 - [ADR-017: Protocolo de Respaldo Híbrido de InfluxDB, Automatización Portable y Arquitectura Multi-Servidor con Sesión Persistente MQTT](017_respaldo_influxdb_y_arquitectura_multiservidor_con_sesion_persistente_mqtt.md) (Aceptado, 2026-08-28)
 - [ADR-018: Resiliencia y Desacoplamiento del Pipeline de Adquisición Acelerográfica](018_resiliencia_pipeline_adquisicion_acelerografo.md) (Aceptado, 2026-09-02)
 - [ADR-019: Modelo Jerárquico de Alertas y Visualización Centralizada de Estaciones en Grafana](019_modelo_jerarquico_alertas_y_visualizacion_grafana.md) (Aceptado, 2026-09-14)
+- [ADR-020: Telemetría Especializada, Cadencia Unificada a 5 Minutos y Parada Remota de Contingencia en Estaciones Acelerográficas](020_telemetria_especializada_cadencia_unificada_y_parada_seguridad_estaciones.md) (Aceptado, 2026-09-14)
