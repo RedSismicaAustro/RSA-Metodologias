@@ -17,8 +17,9 @@ Cada ADR documenta una decisión técnica importante: el contexto que la motivó
 ## ADRs Activos
 
 - [ADR-001: Unificación de la Configuración del Acelerógrafo](001_unificacion_configuracion_acelerografo.md) (Aceptado, 2026-06-03)
+- [ADR-006: Apertura del Named Pipe en Modo Lectura-Escritura (O_RDWR) para Evitar EOF](006_apertura_named_pipe_lectura_escritura.md) (Aceptado, 2026-06-24 / Actualizado, 2026-09-15)
 - [ADR-016: Resolución Global de Trazas MiniSEED, Exclusión de Registro Continuo y Determinación Temporal del event_id](016_resolucion_global_trazas_y_determinacion_temporal_event_id.md) (Aceptado, 2026-08-21)
 - [ADR-017: Protocolo de Respaldo Híbrido de InfluxDB, Automatización Portable y Arquitectura Multi-Servidor con Sesión Persistente MQTT](017_respaldo_influxdb_y_arquitectura_multiservidor_con_sesion_persistente_mqtt.md) (Aceptado, 2026-08-28)
 - [ADR-018: Resiliencia y Desacoplamiento del Pipeline de Adquisición Acelerográfica](018_resiliencia_pipeline_adquisicion_acelerografo.md) (Aceptado, 2026-09-02)
 - [ADR-019: Modelo Jerárquico de Alertas y Visualización Centralizada de Estaciones en Grafana](019_modelo_jerarquico_alertas_y_visualizacion_grafana.md) (Aceptado, 2026-09-14)
-- [ADR-020: Telemetría Especializada, Cadencia Unificada a 5 Minutos y Parada Remota de Contingencia en Estaciones Acelerográficas](020_telemetria_especializada_cadencia_unificada_y_parada_seguridad_estaciones.md) (Aceptado, 2026-09-14)
+- [ADR-020: Telemetría Especializada, Cadencia Unificada a 5 Minutos y Parada Remota de Contingencia en Estaciones Acelerográficas](020_telemetria_especializada_cadencia_unificada_y_parada_seguridad_estaciones.md) (Aceptado, 2026-09-14 / Actualizado, 2026-09-15)
