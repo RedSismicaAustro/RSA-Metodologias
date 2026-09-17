@@ -69,7 +69,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 ## Sesiones por Entorno
 
 - **acelerografo**:
-  - @Milton: 2026/01/2026-01-15_optimizacion_logging.md, 2026/01/2026-01-28_correcion_bug_subida_drive.md, 2026/02/2026-02-03_refactorizacion_mqtt_coordinator.md, 2026/02/2026-02-11_migracion_trixie_bullseye.md, 2026/02/2026-02-23_conectividad_remota_estaciones.md, 2026/02/2026-02-24_planeacion_migracion_entornos_virtuales.md, 2026/04/2026-04-21_resolucion_bug_mqtt_coordinator.md, 2026/04/2026-04-23_configuracion_tailscale_estaciones.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md, 2026/04/2026-04-27_correccion_deploy_acelerografo.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md, 2026/05/2026-05-15_comandos_broadcast_mqtt.md, 2026/06/2026-06-03_unificacion_configuracion.md, 2026/06/2026-06-04_panel_web_config_fase4.md, 2026/06/2026-06-04_wifi_ap_seguro.md, 2026/06/2026-06-11_diagnostico_registro_continuo.md, 2026/06/2026-06-16_ring_buffer_acelerografo.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/06/2026-06-22_migracion_gui_analisis.md, 2026/06/2026-06-23_correccion_rotacion_ring_buffer.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-02_worker_inferencia_gpd_fase3.md, 2026/07/2026-07-07_pipeline_extraccion_automatica_fase4.md, 2026/07/2026-07-07_configuracion_pruebas_fase5_gpd.md, 2026/07/2026-07-10_depuracion_gpd_logs.md, 2026/07/2026-07-15_depuracion_mqtt_gpd.md, 2026/09/2026-09-01_automatizacion_despliegue_acelerografo.md, 2026/09/2026-09-01_diagnostico_adquisicion_cha01.md, 2026/09/2026-09-02_resiliencia_pipeline_adquisicion.md, 2026/09/2026-09-03_sincronizacion_ntp_systemd.md, 2026/09/2026-09-10_modelo_alertas_visualizacion_grafana.md, 2026/09/2026-09-14_telemetria_sensor_drive_parada_seguridad.md, 2026/09/2026-09-15_self_healing_stream_processor_y_validacion_drive.md, 2026/09/2026-09-15_task_script_diagnostico_automatizado_telemetria.md, 2026/09/2026-09-17_optimizacion_registro_drive_y_diagnostico.md
+  - @Milton: 2026/01/2026-01-15_optimizacion_logging.md, 2026/01/2026-01-28_correcion_bug_subida_drive.md, 2026/02/2026-02-03_refactorizacion_mqtt_coordinator.md, 2026/02/2026-02-11_migracion_trixie_bullseye.md, 2026/02/2026-02-23_conectividad_remota_estaciones.md, 2026/02/2026-02-24_planeacion_migracion_entornos_virtuales.md, 2026/04/2026-04-21_resolucion_bug_mqtt_coordinator.md, 2026/04/2026-04-23_configuracion_tailscale_estaciones.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md, 2026/04/2026-04-27_correccion_deploy_acelerografo.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md, 2026/05/2026-05-15_comandos_broadcast_mqtt.md, 2026/06/2026-06-03_unificacion_configuracion.md, 2026/06/2026-06-04_panel_web_config_fase4.md, 2026/06/2026-06-04_wifi_ap_seguro.md, 2026/06/2026-06-11_diagnostico_registro_continuo.md, 2026/06/2026-06-16_ring_buffer_acelerografo.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/06/2026-06-22_migracion_gui_analisis.md, 2026/06/2026-06-23_correccion_rotacion_ring_buffer.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-02_worker_inferencia_gpd_fase3.md, 2026/07/2026-07-07_pipeline_extraccion_automatica_fase4.md, 2026/07/2026-07-07_configuracion_pruebas_fase5_gpd.md, 2026/07/2026-07-10_depuracion_gpd_logs.md, 2026/07/2026-07-15_depuracion_mqtt_gpd.md, 2026/09/2026-09-01_automatizacion_despliegue_acelerografo.md, 2026/09/2026-09-01_diagnostico_adquisicion_cha01.md, 2026/09/2026-09-02_resiliencia_pipeline_adquisicion.md, 2026/09/2026-09-03_sincronizacion_ntp_systemd.md, 2026/09/2026-09-10_modelo_alertas_visualizacion_grafana.md, 2026/09/2026-09-14_telemetria_sensor_drive_parada_seguridad.md, 2026/09/2026-09-15_self_healing_stream_processor_y_validacion_drive.md, 2026/09/2026-09-15_task_script_diagnostico_automatizado_telemetria.md, 2026/09/2026-09-17_optimizacion_registro_drive_y_diagnostico.md, 2026/09/2026-09-17_gobernanza_eventos_extraidos_y_store_and_forward.md
 - **edge-device**:
   - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md, 2026/07/2026-07-28_planificacion_pasantia_sensor_ultrasonico.md
 - **entornos-virtuales**:
@@ -87,6 +87,8 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - @Milton: 2026/09/2026-09-01_diagnostico_adquisicion_cha01.md, 2026/09/2026-09-02_resiliencia_pipeline_adquisicion.md, 2026/09/2026-09-03_sincronizacion_ntp_systemd.md
 - **alertas**:
   - @Milton: 2026/09/2026-09-10_modelo_alertas_visualizacion_grafana.md, 2026/09/2026-09-14_implementacion_alertas_visualizacion_grafana.md
+- **almacenamiento**:
+  - @Milton: 2026/09/2026-09-17_gobernanza_eventos_extraidos_y_store_and_forward.md
 - **arquitectura**:
   - @Milton: 2026/05/2026-05-15_comandos_broadcast_mqtt.md
 - **automatizacion**:
@@ -130,7 +132,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **documentacion**:
   - @Milton: 2026/02/2026-02-20_consolidacion_tig_mqtt.md, 2026/02/2026-02-24_planeacion_migracion_entornos_virtuales.md
 - **drive**:
-  - @Milton: 2026/01/2026-01-28_correcion_bug_subida_drive.md, 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/08/2026-08-31_reubicacion_respaldos_influxdb_gdrive.md, 2026/09/2026-09-01_diagnostico_adquisicion_cha01.md, 2026/09/2026-09-14_telemetria_sensor_drive_parada_seguridad.md, 2026/09/2026-09-15_self_healing_stream_processor_y_validacion_drive.md, 2026/09/2026-09-17_optimizacion_registro_drive_y_diagnostico.md
+  - @Milton: 2026/01/2026-01-28_correcion_bug_subida_drive.md, 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/08/2026-08-31_reubicacion_respaldos_influxdb_gdrive.md, 2026/09/2026-09-01_diagnostico_adquisicion_cha01.md, 2026/09/2026-09-14_telemetria_sensor_drive_parada_seguridad.md, 2026/09/2026-09-15_self_healing_stream_processor_y_validacion_drive.md, 2026/09/2026-09-17_optimizacion_registro_drive_y_diagnostico.md, 2026/09/2026-09-17_gobernanza_eventos_extraidos_y_store_and_forward.md
 - **dsp**:
   - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/08/2026-08-06_seleccion_calendario_downsampling_event_analyzer.md
 - **dspic**:
@@ -141,6 +143,8 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md
 - **event-analyzer**:
   - @Milton: 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/08/2026-08-06_seleccion_calendario_downsampling_event_analyzer.md, 2026/08/2026-08-19_integracion_influxdb_event_analyzer_nodered.md, 2026/08/2026-08-21_diagnostico_resolucion_trazas_correlador_event_analyzer.md, 2026/08/2026-08-25_correccion_resolucion_trazas_migracion_influxdb.md
+- **eventos**:
+  - @Milton: 2026/09/2026-09-17_gobernanza_eventos_extraidos_y_store_and_forward.md
 - **fase4**:
   - @Milton: 2026/07/2026-07-07_pipeline_extraccion_automatica_fase4.md
 - **flask**:
@@ -212,7 +216,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **refactorizacion**:
   - @Milton: 2026/02/2026-02-03_refactorizacion_mqtt_coordinator.md, 2026/06/2026-06-22_migracion_gui_analisis.md
 - **resiliencia**:
-  - @Milton: 2026/09/2026-09-02_resiliencia_pipeline_adquisicion.md, 2026/09/2026-09-03_sincronizacion_ntp_systemd.md, 2026/09/2026-09-15_self_healing_stream_processor_y_validacion_drive.md
+  - @Milton: 2026/09/2026-09-02_resiliencia_pipeline_adquisicion.md, 2026/09/2026-09-03_sincronizacion_ntp_systemd.md, 2026/09/2026-09-15_self_healing_stream_processor_y_validacion_drive.md, 2026/09/2026-09-17_gobernanza_eventos_extraidos_y_store_and_forward.md
 - **scripts**:
   - @Milton: 2026/04/2026-04-27_correccion_deploy_acelerografo.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md
 - **seguridad**:
@@ -284,6 +288,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - ADR-019: decisiones/019_modelo_jerarquico_alertas_y_visualizacion_grafana.md (grafana, flux, alertas, jerarquia, dashboards, health, seismic-monitor, mqtt, telemetria, testing) — Motor de votación jerárquico Flux para diagnóstico sin ambigüedad en SeismicMonitor, filas colapsables en Health y arnés de pruebas sintéticas aisladas de 5 canales.
 - ADR-020: decisiones/020_telemetria_especializada_cadencia_unificada_y_parada_seguridad_estaciones.md (mqtt, telemetria, watchdog, sensor, drive, resiliencia, contingencia, acelerografo) — Cadencia unificada a 5 min en ráfaga sincronizada, auditores de sensor triaxial y Google Drive con validación física en disco, retención MQTT y parada remota de seguridad stop_acquisition_safety.
 - ADR-021: decisiones/021_sincronizacion_espejo_registro_drive_y_sintesis_diagnostico.md (drive, almacenamiento, saneamiento, sincronizacion, diagnostico, json, resiliencia, acelerografo) — Sincronización espejo del registro JSON de subidas a Google Drive con el disco físico, poda automática con salvaguarda ante volúmenes desmontados, comando bajo demanda --purge-registry y reporte sintético en diagnostico.sh.
+- ADR-022: decisiones/022_gobernanza_ciclo_vida_eventos_extraidos_y_store_and_forward.md (eventos, drive, almacenamiento, retencion, resiliencia, store-and-forward, acelerografo) — Gobernanza integral del ciclo de vida de eventos extraídos en el gestor de archivos, subida asíncrona resiliente (Store & Forward), retención temporal configurable y prioridad de desalojo ante espacio crítico.
 
 ---
 
