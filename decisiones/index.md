@@ -23,3 +23,4 @@ Cada ADR documenta una decisión técnica importante: el contexto que la motivó
 - [ADR-018: Resiliencia y Desacoplamiento del Pipeline de Adquisición Acelerográfica](018_resiliencia_pipeline_adquisicion_acelerografo.md) (Aceptado, 2026-09-02)
 - [ADR-019: Modelo Jerárquico de Alertas y Visualización Centralizada de Estaciones en Grafana](019_modelo_jerarquico_alertas_y_visualizacion_grafana.md) (Aceptado, 2026-09-14)
 - [ADR-020: Telemetría Especializada, Cadencia Unificada a 5 Minutos y Parada Remota de Contingencia en Estaciones Acelerográficas](020_telemetria_especializada_cadencia_unificada_y_parada_seguridad_estaciones.md) (Aceptado, 2026-09-14 / Actualizado, 2026-09-15)
+- [ADR-021: Sincronización Espejo del Registro de Google Drive con el Almacenamiento Local y Síntesis de Diagnóstico](021_sincronizacion_espejo_registro_drive_y_sintesis_diagnostico.md) (Aceptado, 2026-09-17)
