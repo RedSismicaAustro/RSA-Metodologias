@@ -1,6 +1,6 @@
 ---
 tipo: indice_maestro
-actualizado: 2026-09-21
+actualizado: 2026-09-23
 version: 2.0
 published: false
 ---
@@ -92,7 +92,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **arquitectura**:
   - @Milton: 2026/05/2026-05-15_comandos_broadcast_mqtt.md
 - **automatizacion**:
-  - @Milton: 2026/06/2026-06-03_unificacion_configuracion.md, 2026/09/2026-09-01_automatizacion_despliegue_acelerografo.md, 2026/09/2026-09-15_task_script_diagnostico_automatizado_telemetria.md, 2026/09/2026-09-17_optimizacion_registro_drive_y_diagnostico.md
+  - @Milton: 2026/06/2026-06-03_unificacion_configuracion.md, 2026/09/2026-09-01_automatizacion_despliegue_acelerografo.md, 2026/09/2026-09-15_task_script_diagnostico_automatizado_telemetria.md, 2026/09/2026-09-17_optimizacion_registro_drive_y_diagnostico.md, 2026/09/2026-09-21_despliegue_release_v452_canary.md
 - **backups**:
   - @Milton: 2026/08/2026-08-26_plan_implementacion_fase5_respaldo_recuperacion.md, 2026/08/2026-08-27_respaldo_influxdb_multiservidor_fase5.md, 2026/08/2026-08-31_reubicacion_respaldos_influxdb_gdrive.md
 - **bash**:
