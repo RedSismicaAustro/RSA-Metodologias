@@ -1,6 +1,6 @@
 ---
 tipo: indice_maestro
-actualizado: 2026-09-23
+actualizado: 2026-09-24
 version: 2.0
 published: false
 ---
@@ -75,7 +75,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **entornos-virtuales**:
   - @Milton: 2026/05/2026-05-26_micromamba_w11.md, 2026/06/2026-06-22_migracion_gui_analisis.md
 - **pasantias**:
-  - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md, 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md, 2026/07/2026-07-28_planificacion_pasantia_sensor_ultrasonico.md
+  - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md, 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md, 2026/07/2026-07-28_planificacion_pasantia_sensor_ultrasonico.md, 2026/09/2026-09-23_planificacion_red_monitorizacion_shm.md
 - **tig**:
   - @Milton: 2026/02/2026-02-13_grafana_dashboard_persistence.md, 2026/02/2026-02-20_consolidacion_tig_mqtt.md, 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-14_correccion_datos_duplicados_grafana.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/05/2026-05-22_quiosco_grafana_seguro.md, 2026/07/2026-07-22_zona_horaria_nodered.md, 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md, 2026/08/2026-08-06_seleccion_calendario_downsampling_event_analyzer.md, 2026/08/2026-08-19_integracion_influxdb_event_analyzer_nodered.md, 2026/08/2026-08-21_diagnostico_resolucion_trazas_correlador_event_analyzer.md, 2026/08/2026-08-25_correccion_resolucion_trazas_migracion_influxdb.md, 2026/08/2026-08-26_plan_implementacion_fase5_respaldo_recuperacion.md, 2026/08/2026-08-27_respaldo_influxdb_multiservidor_fase5.md, 2026/08/2026-08-31_reubicacion_respaldos_influxdb_gdrive.md, 2026/09/2026-09-08_migracion_estaciones_influxdb_grafana.md, 2026/09/2026-09-10_modelo_alertas_visualizacion_grafana.md, 2026/09/2026-09-14_implementacion_alertas_visualizacion_grafana.md, 2026/09/2026-09-23_optimizacion_flux_health_dashboard.md
 
@@ -136,7 +136,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **dsp**:
   - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/08/2026-08-06_seleccion_calendario_downsampling_event_analyzer.md
 - **dspic**:
-  - @Milton: 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md
+  - @Milton: 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md, 2026/09/2026-09-23_planificacion_red_monitorizacion_shm.md
 - **eagle**:
   - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md
 - **esp32**:
@@ -204,7 +204,9 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **os**:
   - @Milton: 2026/02/2026-02-11_migracion_trixie_bullseye.md
 - **pasantias**:
-  - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md, 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md, 2026/07/2026-07-28_planificacion_pasantia_sensor_ultrasonico.md
+  - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md, 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md, 2026/07/2026-07-28_planificacion_pasantia_sensor_ultrasonico.md, 2026/09/2026-09-23_planificacion_red_monitorizacion_shm.md
+- **planificacion**:
+  - @Milton: 2026/09/2026-09-23_planificacion_red_monitorizacion_shm.md
 - **plantillas**:
   - @Milton: 2026/06/2026-06-03_unificacion_configuracion.md
 - **plotly**:
@@ -226,7 +228,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **shell**:
   - @Milton: 2026/05/2026-05-26_micromamba_w11.md
 - **shm**:
-  - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md, 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md
+  - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md, 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md, 2026/09/2026-09-23_planificacion_red_monitorizacion_shm.md
 - **streaming**:
   - @Milton: 2026/06/2026-06-16_ring_buffer_acelerografo.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/06/2026-06-23_correccion_rotacion_ring_buffer.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-02_worker_inferencia_gpd_fase3.md, 2026/09/2026-09-02_resiliencia_pipeline_adquisicion.md, 2026/09/2026-09-15_self_healing_stream_processor_y_validacion_drive.md
 - **supervisor**:
