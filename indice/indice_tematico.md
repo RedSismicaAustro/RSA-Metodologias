@@ -307,7 +307,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
     Estado: **resuelto** (2026-09-18). Produjo: ADR-023, blueprint 2026-09-18_plan_heartbeat_telemetry_state.md.
     → [2026-09-18_diagnostico_falsos_offline_telemetry_state.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/analysis/2026-09-18_diagnostico_falsos_offline_telemetry_state.md)
   - `2026-09-30` — Saturación crítica de memoria, concurrencia en subidas a Drive y pérdida de acceso remoto en CHA02.
-    Estado: **pendiente**.
+    Estado: **en mitigación** (actualizado 2026-10-02: evacuación de 1,934 archivos y diagnóstico DNS).
     → [2026-09-30_diagnostico_saturacion_memoria_y_bloqueo_subidas_drive.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/analysis/2026-09-30_diagnostico_saturacion_memoria_y_bloqueo_subidas_drive.md)
 - **tig**:
   - `2026-09-02` — Ingesta, persistencia y alertamiento de la telemetría status/acquisition en el Stack TIG.
