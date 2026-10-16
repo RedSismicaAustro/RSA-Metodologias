@@ -26,3 +26,4 @@ Cada ADR documenta una decisión técnica importante: el contexto que la motivó
 - [ADR-021: Sincronización Espejo del Registro de Google Drive con el Almacenamiento Local y Síntesis de Diagnóstico](021_sincronizacion_espejo_registro_drive_y_sintesis_diagnostico.md) (Aceptado, 2026-09-17)
 - [ADR-022: Gobernanza del Ciclo de Vida de Eventos Extraídos, Resiliencia Store and Forward y Prioridad de Desalojo en Acelerógrafos](022_gobernanza_ciclo_vida_eventos_extraidos_y_store_and_forward.md) (Aceptado, 2026-09-17)
 - [ADR-023: Latido Periódico (Heartbeat) de Telemetría State con Preservación de Sesión y Resiliencia ante Desconexiones MQTT](023_heartbeat_periodico_telemetria_state_y_resiliencia_lwt.md) (Aceptado, 2026-09-18)
+- [ADR-024: Blindaje del Pipeline de Subida a Google Drive contra Livelock de Memoria, Concurrencia Descontrolada y Bufferbloat](024_blindaje_pipeline_drive_livelock_memoria_concurrencia.md) (Aceptado, 2026-10-16)
