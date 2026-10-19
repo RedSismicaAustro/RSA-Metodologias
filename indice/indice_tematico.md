@@ -318,6 +318,9 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - `2026-09-30` — Saturación crítica de memoria, concurrencia en subidas a Drive y pérdida de acceso remoto en CHA02.
     Estado: **resuelto** (2026-10-16). Produjo: ADR-024, blueprint 2026-10-14_plan_blindaje_scripts_livelock_memoria.md.
     → [2026-09-30_diagnostico_saturacion_memoria_y_bloqueo_subidas_drive.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/analysis/2026-09-30_diagnostico_saturacion_memoria_y_bloqueo_subidas_drive.md)
+  - `2026-10-19` — Acumulación de archivos en disco por fallo de control de espacio (NameError, cerrojo y desalojo) en DEV00 y TES00.
+    Estado: **pendiente**.
+    → [2026-10-19_diagnostico_acumulacion_archivos_y_fallo_control_espacio_drive.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/analysis/2026-10-19_diagnostico_acumulacion_archivos_y_fallo_control_espacio_drive.md)
 - **tig**:
   - `2026-09-02` — Ingesta, persistencia y alertamiento de la telemetría status/acquisition en el Stack TIG.
     Estado: **pendiente**.
