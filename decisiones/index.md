@@ -27,3 +27,4 @@ Cada ADR documenta una decisión técnica importante: el contexto que la motivó
 - [ADR-022: Gobernanza del Ciclo de Vida de Eventos Extraídos, Resiliencia Store and Forward y Prioridad de Desalojo en Acelerógrafos](022_gobernanza_ciclo_vida_eventos_extraidos_y_store_and_forward.md) (Aceptado, 2026-09-17)
 - [ADR-023: Latido Periódico (Heartbeat) de Telemetría State con Preservación de Sesión y Resiliencia ante Desconexiones MQTT](023_heartbeat_periodico_telemetria_state_y_resiliencia_lwt.md) (Aceptado, 2026-09-18)
 - [ADR-024: Blindaje del Pipeline de Subida a Google Drive contra Livelock de Memoria, Concurrencia Descontrolada y Bufferbloat](024_blindaje_pipeline_drive_livelock_memoria_concurrencia.md) (Aceptado, 2026-10-16)
+- [ADR-025: Robustecimiento de Cerrojos de Proceso, Desalojo Dinámico Iterativo y Gobernanza de Almacenamiento en Disco](025_robustecimiento_cerrojos_y_control_espacio_disco.md) (Aceptado, 2026-10-19)
