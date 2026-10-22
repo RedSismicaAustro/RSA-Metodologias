@@ -1,6 +1,6 @@
 ---
 tipo: indice_maestro
-actualizado: 2026-09-30
+actualizado: 2026-10-22
 version: 2.0
 published: false
 ---
@@ -322,6 +322,9 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - `2026-10-19` — Acumulación de archivos en disco por fallo de control de espacio (NameError, cerrojo y desalojo) en DEV00 y TES00.
     Estado: **resuelto** (2026-10-19). Produjo: ADR-025, blueprint 2026-10-19_plan_correccion_acumulacion_y_robustecimiento_gestor_sync.md.
     → [2026-10-19_diagnostico_acumulacion_archivos_y_fallo_control_espacio_drive.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/analysis/2026-10-19_diagnostico_acumulacion_archivos_y_fallo_control_espacio_drive.md)
+  - `2026-10-22` — Bloqueo de CPU y livelock en conversión de binarios con gaps temporales (np.insert en binary_to_mseed).
+    Estado: **pendiente**.
+    → [2026-10-22_diagnostico_bloqueo_cpu_relleno_gaps_binary_to_mseed.md](https://github.com/RedSismicaAustro/RSA-Acelerografo/blob/main/docs/analysis/2026-10-22_diagnostico_bloqueo_cpu_relleno_gaps_binary_to_mseed.md)
 - **tig**:
   - `2026-09-02` — Ingesta, persistencia y alertamiento de la telemetría status/acquisition en el Stack TIG.
     Estado: **pendiente**.
