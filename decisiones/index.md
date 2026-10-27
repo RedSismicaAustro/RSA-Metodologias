@@ -29,3 +29,4 @@ Cada ADR documenta una decisión técnica importante: el contexto que la motivó
 - [ADR-024: Blindaje del Pipeline de Subida a Google Drive contra Livelock de Memoria, Concurrencia Descontrolada y Bufferbloat](024_blindaje_pipeline_drive_livelock_memoria_concurrencia.md) (Aceptado, 2026-10-16)
 - [ADR-025: Robustecimiento de Cerrojos de Proceso, Desalojo Dinámico Iterativo y Gobernanza de Almacenamiento en Disco](025_robustecimiento_cerrojos_y_control_espacio_disco.md) (Aceptado, 2026-10-19)
 - [ADR-026: Dispersión Vectorizada O(N) para Gaps Temporales, Preservación de Fase y Blindaje de Ruido SPI en binary_to_mseed](026_dispersion_vectorizada_gaps_y_blindaje_spi_binary_to_mseed.md) (Aceptado, 2026-10-26)
+- [ADR-027: Resiliencia ante Archivos Truncados por Corte de Energía y Desacople Autónomo de Timestamp en binary_to_mseed](027_resiliencia_archivos_truncados_y_desacople_timestamp_binary_to_mseed.md) (Aceptado, 2026-10-27)
