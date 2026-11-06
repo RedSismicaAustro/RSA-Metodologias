@@ -1,6 +1,6 @@
 ---
 tipo: indice_maestro
-actualizado: 2026-10-26
+actualizado: 2026-11-06
 version: 2.0
 published: false
 ---
@@ -84,7 +84,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **pasantias**:
   - @Milton: 2026/07/2026-07-15_planificacion_pasantias.md, 2026/07/2026-07-29_ensamblaje_red_monitorizacion_shm.md, 2026/07/2026-07-28_planificacion_pasantia_sensor_ultrasonico.md, 2026/09/2026-09-23_planificacion_red_monitorizacion_shm.md, 2026/09/2026-09-28_planificacion_pasantias_multiplexor_daq.md
 - **tig**:
-  - @Milton: 2026/02/2026-02-13_grafana_dashboard_persistence.md, 2026/02/2026-02-20_consolidacion_tig_mqtt.md, 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-14_correccion_datos_duplicados_grafana.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/05/2026-05-22_quiosco_grafana_seguro.md, 2026/07/2026-07-22_zona_horaria_nodered.md, 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md, 2026/08/2026-08-06_seleccion_calendario_downsampling_event_analyzer.md, 2026/08/2026-08-19_integracion_influxdb_event_analyzer_nodered.md, 2026/08/2026-08-21_diagnostico_resolucion_trazas_correlador_event_analyzer.md, 2026/08/2026-08-25_correccion_resolucion_trazas_migracion_influxdb.md, 2026/08/2026-08-26_plan_implementacion_fase5_respaldo_recuperacion.md, 2026/08/2026-08-27_respaldo_influxdb_multiservidor_fase5.md, 2026/08/2026-08-31_reubicacion_respaldos_influxdb_gdrive.md, 2026/09/2026-09-08_migracion_estaciones_influxdb_grafana.md, 2026/09/2026-09-10_modelo_alertas_visualizacion_grafana.md, 2026/09/2026-09-14_implementacion_alertas_visualizacion_grafana.md, 2026/09/2026-09-23_optimizacion_flux_health_dashboard.md
+  - @Milton: 2026/02/2026-02-13_grafana_dashboard_persistence.md, 2026/02/2026-02-20_consolidacion_tig_mqtt.md, 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-14_correccion_datos_duplicados_grafana.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/05/2026-05-22_quiosco_grafana_seguro.md, 2026/07/2026-07-22_zona_horaria_nodered.md, 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md, 2026/08/2026-08-06_seleccion_calendario_downsampling_event_analyzer.md, 2026/08/2026-08-19_integracion_influxdb_event_analyzer_nodered.md, 2026/08/2026-08-21_diagnostico_resolucion_trazas_correlador_event_analyzer.md, 2026/08/2026-08-25_correccion_resolucion_trazas_migracion_influxdb.md, 2026/08/2026-08-26_plan_implementacion_fase5_respaldo_recuperacion.md, 2026/08/2026-08-27_respaldo_influxdb_multiservidor_fase5.md, 2026/08/2026-08-31_reubicacion_respaldos_influxdb_gdrive.md, 2026/09/2026-09-08_migracion_estaciones_influxdb_grafana.md, 2026/09/2026-09-10_modelo_alertas_visualizacion_grafana.md, 2026/09/2026-09-14_implementacion_alertas_visualizacion_grafana.md, 2026/09/2026-09-23_optimizacion_flux_health_dashboard.md, 2026/11/2026-11-06_migracion_servicios_rsa_monitor_sismico.md
 
 ---
 
@@ -101,7 +101,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **automatizacion**:
   - @Milton: 2026/06/2026-06-03_unificacion_configuracion.md, 2026/09/2026-09-01_automatizacion_despliegue_acelerografo.md, 2026/09/2026-09-15_task_script_diagnostico_automatizado_telemetria.md, 2026/09/2026-09-17_optimizacion_registro_drive_y_diagnostico.md, 2026/09/2026-09-21_despliegue_release_v452_canary.md
 - **backups**:
-  - @Milton: 2026/08/2026-08-26_plan_implementacion_fase5_respaldo_recuperacion.md, 2026/08/2026-08-27_respaldo_influxdb_multiservidor_fase5.md, 2026/08/2026-08-31_reubicacion_respaldos_influxdb_gdrive.md
+  - @Milton: 2026/08/2026-08-26_plan_implementacion_fase5_respaldo_recuperacion.md, 2026/08/2026-08-27_respaldo_influxdb_multiservidor_fase5.md, 2026/08/2026-08-31_reubicacion_respaldos_influxdb_gdrive.md, 2026/11/2026-11-06_migracion_servicios_rsa_monitor_sismico.md
 - **bash**:
   - @Milton: 2026/04/2026-04-27_correccion_deploy_acelerografo.md
 - **bom**:
@@ -139,7 +139,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **dnsmasq**:
   - @Milton: 2026/06/2026-06-04_wifi_ap_seguro.md
 - **docker**:
-  - @Milton: 2026/02/2026-02-20_consolidacion_tig_mqtt.md, 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md, 2026/08/2026-08-27_respaldo_influxdb_multiservidor_fase5.md, 2026/08/2026-08-31_reubicacion_respaldos_influxdb_gdrive.md
+  - @Milton: 2026/02/2026-02-20_consolidacion_tig_mqtt.md, 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md, 2026/08/2026-08-27_respaldo_influxdb_multiservidor_fase5.md, 2026/08/2026-08-31_reubicacion_respaldos_influxdb_gdrive.md, 2026/11/2026-11-06_migracion_servicios_rsa_monitor_sismico.md
 - **documentacion**:
   - @Milton: 2026/02/2026-02-20_consolidacion_tig_mqtt.md, 2026/02/2026-02-24_planeacion_migracion_entornos_virtuales.md
 - **drive**:
@@ -207,7 +207,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **micromamba**:
   - @Milton: 2026/05/2026-05-26_micromamba_w11.md
 - **migracion**:
-  - @Milton: 2026/02/2026-02-11_migracion_trixie_bullseye.md, 2026/09/2026-09-08_migracion_estaciones_influxdb_grafana.md
+  - @Milton: 2026/02/2026-02-11_migracion_trixie_bullseye.md, 2026/09/2026-09-08_migracion_estaciones_influxdb_grafana.md, 2026/11/2026-11-06_migracion_servicios_rsa_monitor_sismico.md
 - **mqtt**:
   - @Milton: 2026/02/2026-02-03_refactorizacion_mqtt_coordinator.md, 2026/02/2026-02-20_consolidacion_tig_mqtt.md, 2026/04/2026-04-21_resolucion_bug_mqtt_coordinator.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md, 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/05/2026-05-15_comandos_broadcast_mqtt.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/07/2026-07-07_configuracion_pruebas_fase5_gpd.md, 2026/07/2026-07-15_depuracion_mqtt_gpd.md, 2026/07/2026-07-22_zona_horaria_nodered.md, 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md, 2026/08/2026-08-19_integracion_influxdb_event_analyzer_nodered.md, 2026/08/2026-08-26_plan_implementacion_fase5_respaldo_recuperacion.md, 2026/08/2026-08-27_respaldo_influxdb_multiservidor_fase5.md, 2026/09/2026-09-01_automatizacion_despliegue_acelerografo.md, 2026/09/2026-09-02_resiliencia_pipeline_adquisicion.md, 2026/09/2026-09-10_modelo_alertas_visualizacion_grafana.md, 2026/09/2026-09-14_implementacion_alertas_visualizacion_grafana.md, 2026/09/2026-09-14_telemetria_sensor_drive_parada_seguridad.md, 2026/09/2026-09-18_heartbeat_telemetria_state.md
 - **multi-servidor**:
@@ -217,7 +217,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **named-pipe**:
   - @Milton: 2026/09/2026-09-01_diagnostico_adquisicion_cha01.md, 2026/09/2026-09-02_resiliencia_pipeline_adquisicion.md
 - **node-red**:
-  - @Milton: 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/07/2026-07-22_zona_horaria_nodered.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md, 2026/08/2026-08-19_integracion_influxdb_event_analyzer_nodered.md
+  - @Milton: 2026/05/2026-05-12_nodered_dashboard_layout.md, 2026/05/2026-05-15_estabilizacion_nodered_dashboard.md, 2026/07/2026-07-22_zona_horaria_nodered.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md, 2026/08/2026-08-19_integracion_influxdb_event_analyzer_nodered.md, 2026/11/2026-11-06_migracion_servicios_rsa_monitor_sismico.md
 - **ntp**:
   - @Milton: 2026/09/2026-09-03_sincronizacion_ntp_systemd.md
 - **obspy**:
