@@ -1,6 +1,6 @@
 ---
 tipo: indice_maestro
-actualizado: 2026-11-06
+actualizado: 2026-11-13
 version: 2.0
 published: false
 ---
@@ -77,6 +77,8 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 
 - **acelerografo**:
   - @Milton: 2026/01/2026-01-15_optimizacion_logging.md, 2026/01/2026-01-28_correcion_bug_subida_drive.md, 2026/02/2026-02-03_refactorizacion_mqtt_coordinator.md, 2026/02/2026-02-11_migracion_trixie_bullseye.md, 2026/02/2026-02-23_conectividad_remota_estaciones.md, 2026/02/2026-02-24_planeacion_migracion_entornos_virtuales.md, 2026/04/2026-04-21_resolucion_bug_mqtt_coordinator.md, 2026/04/2026-04-23_configuracion_tailscale_estaciones.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md, 2026/04/2026-04-27_correccion_deploy_acelerografo.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md, 2026/05/2026-05-15_comandos_broadcast_mqtt.md, 2026/06/2026-06-03_unificacion_configuracion.md, 2026/06/2026-06-04_panel_web_config_fase4.md, 2026/06/2026-06-04_wifi_ap_seguro.md, 2026/06/2026-06-11_diagnostico_registro_continuo.md, 2026/06/2026-06-16_ring_buffer_acelerografo.md, 2026/06/2026-06-17_ring_buffer_fase4_event_extractor.md, 2026/06/2026-06-22_migracion_gui_analisis.md, 2026/06/2026-06-23_correccion_rotacion_ring_buffer.md, 2026/06/2026-06-30_shm_preprocesador_gpd.md, 2026/07/2026-07-02_worker_inferencia_gpd_fase3.md, 2026/07/2026-07-07_pipeline_extraccion_automatica_fase4.md, 2026/07/2026-07-07_configuracion_pruebas_fase5_gpd.md, 2026/07/2026-07-10_depuracion_gpd_logs.md, 2026/07/2026-07-15_depuracion_mqtt_gpd.md, 2026/09/2026-09-01_automatizacion_despliegue_acelerografo.md, 2026/09/2026-09-01_diagnostico_adquisicion_cha01.md, 2026/09/2026-09-02_resiliencia_pipeline_adquisicion.md, 2026/09/2026-09-03_sincronizacion_ntp_systemd.md, 2026/09/2026-09-10_modelo_alertas_visualizacion_grafana.md, 2026/09/2026-09-14_telemetria_sensor_drive_parada_seguridad.md, 2026/09/2026-09-15_self_healing_stream_processor_y_validacion_drive.md, 2026/09/2026-09-15_task_script_diagnostico_automatizado_telemetria.md, 2026/09/2026-09-17_optimizacion_registro_drive_y_diagnostico.md, 2026/09/2026-09-17_gobernanza_eventos_extraidos_y_store_and_forward.md, 2026/09/2026-09-18_heartbeat_telemetria_state.md, 2026/09/2026-09-21_despliegue_release_v452_canary.md, 2026/09/2026-09-23_diagnostico_red_drive_y_livelock_memoria.md, 2026/10/2026-10-01_evacuacion_drive_y_diagnostico_dns_cha02.md, 2026/10/2026-10-13_conversion_y_subida_resiliente_pendientes_drive.md, 2026/10/2026-10-16_blindaje_pipeline_drive_livelock_memoria.md, 2026/10/2026-10-19_robustecimiento_cerrojos_y_control_espacio_disco.md, 2026/10/2026-10-21_empaquetado_diario_contingencia_sftp_y_diagnostico_gaps.md, 2026/10/2026-10-23_refactorizacion_gaps_binary_to_mseed_y_blindaje_spi.md, 2026/10/2026-10-27_resiliencia_archivos_truncados_binary_to_mseed.md
+- **concentrador**:
+  - @Milton: 2026/11/2026-11-11_arquitectura_distribuida_y_blueprints_concentrador.md
 - **edge-device**:
   - @Milton: 2026/04/2026-04-23_migracion_sensor_ultrasonico.md, 2026/07/2026-07-28_planificacion_pasantia_sensor_ultrasonico.md
 - **entornos-virtuales**:
@@ -91,13 +93,13 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 ## Sesiones por Tema
 
 - **adquisicion**:
-  - @Milton: 2026/09/2026-09-01_diagnostico_adquisicion_cha01.md, 2026/09/2026-09-02_resiliencia_pipeline_adquisicion.md, 2026/09/2026-09-03_sincronizacion_ntp_systemd.md, 2026/09/2026-09-28_planificacion_pasantias_multiplexor_daq.md
+  - @Milton: 2026/09/2026-09-01_diagnostico_adquisicion_cha01.md, 2026/09/2026-09-02_resiliencia_pipeline_adquisicion.md, 2026/09/2026-09-03_sincronizacion_ntp_systemd.md, 2026/09/2026-09-28_planificacion_pasantias_multiplexor_daq.md, 2026/11/2026-11-11_arquitectura_distribuida_y_blueprints_concentrador.md
 - **alertas**:
   - @Milton: 2026/09/2026-09-10_modelo_alertas_visualizacion_grafana.md, 2026/09/2026-09-14_implementacion_alertas_visualizacion_grafana.md
 - **almacenamiento**:
   - @Milton: 2026/09/2026-09-17_gobernanza_eventos_extraidos_y_store_and_forward.md, 2026/10/2026-10-19_robustecimiento_cerrojos_y_control_espacio_disco.md, 2026/10/2026-10-21_empaquetado_diario_contingencia_sftp_y_diagnostico_gaps.md
 - **arquitectura**:
-  - @Milton: 2026/05/2026-05-15_comandos_broadcast_mqtt.md
+  - @Milton: 2026/05/2026-05-15_comandos_broadcast_mqtt.md, 2026/11/2026-11-11_arquitectura_distribuida_y_blueprints_concentrador.md
 - **automatizacion**:
   - @Milton: 2026/06/2026-06-03_unificacion_configuracion.md, 2026/09/2026-09-01_automatizacion_despliegue_acelerografo.md, 2026/09/2026-09-15_task_script_diagnostico_automatizado_telemetria.md, 2026/09/2026-09-17_optimizacion_registro_drive_y_diagnostico.md, 2026/09/2026-09-21_despliegue_release_v452_canary.md
 - **backups**:
@@ -233,7 +235,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **plotly**:
   - @Milton: 2026/07/2026-07-24_event_analyzer_fase1_streamlit.md, 2026/08/2026-08-06_seleccion_calendario_downsampling_event_analyzer.md
 - **redes**:
-  - @Milton: 2026/04/2026-04-23_configuracion_tailscale_estaciones.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md
+  - @Milton: 2026/04/2026-04-23_configuracion_tailscale_estaciones.md, 2026/04/2026-04-24_reversion_debouncing_mqtt_coordinator.md, 2026/11/2026-11-11_arquitectura_distribuida_y_blueprints_concentrador.md
 - **rclone**:
   - @Milton: 2026/07/2026-07-23_correlador_eventos_regionales_mqtt.md, 2026/08/2026-08-26_plan_implementacion_fase5_respaldo_recuperacion.md, 2026/08/2026-08-27_respaldo_influxdb_multiservidor_fase5.md, 2026/08/2026-08-31_reubicacion_respaldos_influxdb_gdrive.md
 - **refactorizacion**:
@@ -263,7 +265,7 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - **telegraf**:
   - @Milton: 2026/05/2026-05-14_correccion_datos_duplicados_grafana.md, 2026/09/2026-09-10_modelo_alertas_visualizacion_grafana.md, 2026/09/2026-09-14_implementacion_alertas_visualizacion_grafana.md, 2026/11/2026-11-10_unificacion_docker_compose_modularizacion_y_release_v110.md
 - **telemetria**:
-  - @Milton: 2026/02/2026-02-03_refactorizacion_mqtt_coordinator.md, 2026/04/2026-04-21_resolucion_bug_mqtt_coordinator.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md, 2026/05/2026-05-15_comandos_broadcast_mqtt.md, 2026/06/2026-06-16_ring_buffer_acelerografo.md, 2026/07/2026-07-07_configuracion_pruebas_fase5_gpd.md, 2026/09/2026-09-10_modelo_alertas_visualizacion_grafana.md, 2026/09/2026-09-14_telemetria_sensor_drive_parada_seguridad.md, 2026/09/2026-09-15_task_script_diagnostico_automatizado_telemetria.md, 2026/09/2026-09-18_heartbeat_telemetria_state.md, 2026/09/2026-09-23_optimizacion_flux_health_dashboard.md
+  - @Milton: 2026/02/2026-02-03_refactorizacion_mqtt_coordinator.md, 2026/04/2026-04-21_resolucion_bug_mqtt_coordinator.md, 2026/05/2026-05-11_extraccion_remota_mqtt.md, 2026/05/2026-05-15_comandos_broadcast_mqtt.md, 2026/06/2026-06-16_ring_buffer_acelerografo.md, 2026/07/2026-07-07_configuracion_pruebas_fase5_gpd.md, 2026/09/2026-09-10_modelo_alertas_visualizacion_grafana.md, 2026/09/2026-09-14_telemetria_sensor_drive_parada_seguridad.md, 2026/09/2026-09-15_task_script_diagnostico_automatizado_telemetria.md, 2026/09/2026-09-18_heartbeat_telemetria_state.md, 2026/09/2026-09-23_optimizacion_flux_health_dashboard.md, 2026/11/2026-11-11_arquitectura_distribuida_y_blueprints_concentrador.md
 - **ubuntu**:
   - @Milton: 2026/05/2026-05-22_quiosco_grafana_seguro.md, 2026/07/2026-07-31_despliegue_nuevo_servidor_ubuntu.md
 - **ui**:
