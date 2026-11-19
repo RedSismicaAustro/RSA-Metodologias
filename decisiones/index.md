@@ -30,3 +30,6 @@ Cada ADR documenta una decisión técnica importante: el contexto que la motivó
 - [ADR-025: Robustecimiento de Cerrojos de Proceso, Desalojo Dinámico Iterativo y Gobernanza de Almacenamiento en Disco](025_robustecimiento_cerrojos_y_control_espacio_disco.md) (Aceptado, 2026-10-19)
 - [ADR-026: Dispersión Vectorizada O(N) para Gaps Temporales, Preservación de Fase y Blindaje de Ruido SPI en binary_to_mseed](026_dispersion_vectorizada_gaps_y_blindaje_spi_binary_to_mseed.md) (Aceptado, 2026-10-26)
 - [ADR-027: Resiliencia ante Archivos Truncados por Corte de Energía y Desacople Autónomo de Timestamp en binary_to_mseed](027_resiliencia_archivos_truncados_y_desacople_timestamp_binary_to_mseed.md) (Aceptado, 2026-10-27)
+- [ADR-028: Unificación de Orquestación Docker Compose y Modularización de Servicios](028_unificacion_orquestacion_docker_compose_y_modularizacion_servicios.md) (Aceptado, 2026-11-10)
+- [ADR-029: Desacoplamiento de Runtime y Pipeline de Empaquetado ZIP Mensual para Auscultación Óptica de Presas](029_desacoplamiento_runtime_y_pipeline_empaquetado_zip_fotos_coordinometros.md) (Aceptado, 2026-11-19)
+

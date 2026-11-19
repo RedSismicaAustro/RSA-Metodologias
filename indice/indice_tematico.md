@@ -1,6 +1,6 @@
 ---
 tipo: indice_maestro
-actualizado: 2026-11-17
+actualizado: 2026-11-19
 version: 2.0
 published: false
 ---
@@ -68,8 +68,16 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
   - `telegraf.conf`: Configuración de recolección y ruteo dual de métricas de host y telemetría distribuida MQTT (estado, watchdog, sensor triaxial, drive y eventos) a InfluxDB v2 → [RSA-Intern-TIG-MQTT/docs/context/telegraf_context.md](https://github.com/RedSismicaAustro/RSA-Intern-TIG-MQTT/blob/main/docs/context/telegraf_context.md)
   - `seismic_monitor.json`: Dashboard principal de supervisión en matriz de 3 columnas con motor de votación jerárquico Flux y navegación directa a Health → [RSA-Intern-TIG-MQTT/docs/context/seismic_monitor_context.md](https://github.com/RedSismicaAustro/RSA-Intern-TIG-MQTT/blob/main/docs/context/seismic_monitor_context.md)
   - `health.json`: Dashboard analítico de diagnóstico detallado por estación en 4 filas colapsables (v13: deduplicación selectiva de transiciones, muestreo continuo triaxial 5 min y organize) → [RSA-Intern-TIG-MQTT/docs/context/health_context.md](https://github.com/RedSismicaAustro/RSA-Intern-TIG-MQTT/blob/main/docs/context/health_context.md)
-  - `simulador_alertas_mqtt.py`: Inyector interactivo de telemetría sintética MQTT con aislamiento estricto de anomalías y marcas de tiempo UTC dinámicas para pruebas del stack TIG → [RSA-Intern-TIG-MQTT/docs/context/simulador_alertas_mqtt_context.md](https://github.com/RedSismicaAustro/RSA-Intern-TIG-MQTT/blob/main/docs/context/simulador_alertas_mqtt_context.md)
 - **edge-device**: (pendiente)
+- **concentrador**:
+  - `sincronizar_fotos_coordinometros.py`: Orquestador de transporte Ad-Hoc 802.11 IBSS con rsync incremental, barra de progreso en vivo, purga atómica condicionada y encadenamiento a ZIP → [RSA-Concentrador-Presas/docs/context/sincronizar_fotos_coordinometros_context.md](https://github.com/RedSismicaAustro/RSA-Concentrador-Presas/blob/main/docs/context/sincronizar_fotos_coordinometros_context.md)
+  - `empaquetador_fotos.py`: Clasificador temporal de fotos en contenedores mensuales .zip con verificación CRC-32 y compatibilidad nativa Windows 11 → [RSA-Concentrador-Presas/docs/context/empaquetador_fotos_context.md](https://github.com/RedSismicaAustro/RSA-Concentrador-Presas/blob/main/docs/context/empaquetador_fotos_context.md)
+  - `setup_adhoc_concentrador.py`: Aprovisionamiento idempotente de red Ad-Hoc IBSS Canal 5 con iw nativo, sincronización de hostname y reenvío IPv4 permanente → [RSA-Concentrador-Presas/docs/context/setup_adhoc_concentrador_context.md](https://github.com/RedSismicaAustro/RSA-Concentrador-Presas/blob/main/docs/context/setup_adhoc_concentrador_context.md)
+  - `config.py`: Cargador de configuración y runtime con resolución recursiva de variables ${RSA_CONCENTRADOR_*} y desacoplamiento de Git → [RSA-Concentrador-Presas/docs/context/config_context.md](https://github.com/RedSismicaAustro/RSA-Concentrador-Presas/blob/main/docs/context/config_context.md)
+- **coordinometro**:
+  - `setup_adhoc_coordinometro.py`: Configuración Ad-Hoc 802.11 IBSS compatible con Python 3.5 en Raspbian Stretch con sincronización de hostname y verificación de enlace → [RSA-Coordinometro-Optico/docs/context/setup_adhoc_coordinometro_context.md](https://github.com/RedSismicaAustro/RSA-Coordinometro-Optico/blob/main/docs/context/setup_adhoc_coordinometro_context.md)
+  - `migrar_nombres_fotos.py`: Herramienta de migración atómica secuencial de fotos a formato estándar <ESTACION>_YYYYMMDD_HHMMSS con cero duplicación en MicroSD → [RSA-Coordinometro-Optico/docs/context/migrar_nombres_fotos_context.md](https://github.com/RedSismicaAustro/RSA-Coordinometro-Optico/blob/main/docs/context/migrar_nombres_fotos_context.md)
+  - `LeerArchivoJSON.py`: Módulo de configuración JSON y variables ${RSA_COORDINOMETRO_*} compatible con Python 3.5.3 → [RSA-Coordinometro-Optico/docs/context/LeerArchivoJSON_context.md](https://github.com/RedSismicaAustro/RSA-Coordinometro-Optico/blob/main/docs/context/LeerArchivoJSON_context.md)
 
 ---
 
@@ -320,6 +328,8 @@ Para resolver rutas, consulta `catalogo_contribuidores.md`.
 - ADR-026: decisiones/026_dispersion_vectorizada_gaps_y_blindaje_spi_binary_to_mseed.md (binary_to_mseed, livelock, gaps, fase_sismica, numpy, steim1, obspy, spi_glitch, deduplicacion, resiliencia) — Dispersión vectorizada O(N) con preallocado directo para relleno de gaps, preservación estricta de fase, deduplicación multidimensional y triple barrera contra ruido de bus SPI en binary_to_mseed.
 - ADR-027: decisiones/027_resiliencia_archivos_truncados_y_desacople_timestamp_binary_to_mseed.md (binary_to_mseed, desacople_timestamp, archivos_truncados, corrupcion_trama, apagones, resiliencia, obspy, numpy) — Resiliencia ante cortes abruptos de energía en digitalizadores, autonomía de fecha/hora en memoria, aislamiento de colas truncadas y protección de directorios institucionales en binary_to_mseed.
 - ADR-028: decisiones/028_unificacion_orquestacion_docker_compose_y_modularizacion_servicios.md (docker-compose, orquestacion, modularizacion, node-red, telegraf, influxdb, mqtt) — Unificación del microservicio Node-RED en el Docker Compose maestro, modularización simétrica de carpetas de configuración (Telegraf, InfluxDB, Node-RED) y aislamiento anti-colisión MQTT.
+- ADR-029: decisiones/029_desacoplamiento_runtime_y_pipeline_empaquetado_zip_fotos_coordinometros.md (concentrador, coordinometro, desacoplamiento-runtime, zip, rsync, adhoc, windows11, almacenamiento) — Desacoplamiento de runtime y pipeline de empaquetado ZIP mensual para auscultación óptica de presas.
+
 
 ---
 
